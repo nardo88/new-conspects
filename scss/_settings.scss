@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #1f1f1f;
+
+    color: #ffffff;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    height: calc(100vh - 78px);
+    display: flex;
+
+}
+
+
+
+.content{
+    flex-grow: 1;
+
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
