@@ -1,26 +1,6 @@
+import data from './data.js';
+
 document.addEventListener('DOMContentLoaded', () => {
-
-
-    const data = {
-        main: [{
-                title: 'Настройка VS Code',
-                path: './conspects/main/vs_code/vs_code.html',
-                target: ''
-            },
-            {
-                title: 'Нарезка иконок из PSD макета',
-                path: '/conspects/main/Icon_from_psd/Icon_from_psd.html',
-                target: ''
-            },
-        ],
-        teory: {},
-        practice: {},
-        plugins: {},
-        english: {}
-
-    }
-
-
 
     const menu = () => {
         const navBarBody = document.querySelector('.nav-bar__body');
@@ -105,6 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (target.dataset.path) {
+                const mainListSubItem = document.querySelectorAll('.main-list__sub-item')
+
+                mainListSubItem.forEach(item => {
+                    item.classList.remove('main-list__sub-item--active')
+                    if (item === target) {
+                        target.classList.add('main-list__sub-item--active')
+                    }
+                })
+
                 iframe.src = target.dataset.path;
                 closeMenu();
             }
@@ -127,11 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                             mainMenuWrapper.forEach(elem => {
                                 elem.style.maxHeight = '0px';
-                               elem.classList.remove('active');
+                                elem.classList.remove('active');
                             })
-
-
-                       }  else {
+                        } else {
 
                             mainMenuWrapper.forEach(a => {
                                 a.style.maxHeight = '0px';
@@ -142,26 +129,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             mainMenuWrapper[i].style.maxHeight = mainMenuWrapper[i].children[0].clientHeight + 'px';
 
                             item.classList.add('main-list__item-title--active');
-                       }
+                        }
                     }
-
                 })
-
-
-
             }
-
-
-
         })
-
-
-
-
-
-
     }
-
     menu()
 
 
