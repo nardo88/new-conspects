@@ -109,6 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeMenu();
             }
 
+            if (target.classList.contains('overlay')) {
+                closeMenu();
+            }
+
+
+
             if (target.classList.contains('main-list__item-title')) {
                 const mainMenuItem = document.querySelectorAll('.main-list__item-title');
                 const mainMenuWrapper = document.querySelectorAll('.main-list__wrapper');
