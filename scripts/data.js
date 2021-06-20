@@ -6,32 +6,32 @@ const data = {
         },
         {
             title: 'Нарезка иконок из PSD макета',
-            path: '/conspects/main/Icon_from_psd/Icon_from_psd.html',
+            path: './conspects/main/Icon_from_psd/Icon_from_psd.html',
             target: ''
         },
         {
             title: 'Динамический адаптив',
-            path: '/conspects/main/dinamic_adaptive/dinamic_adaptive.html',
+            path: './conspects/main/dinamic_adaptive/dinamic_adaptive.html',
             target: ''
         },
         {
             title: 'Препоцессор SASS',
-            path: '/conspects/main/sass/sass.html',
+            path: './conspects/main/sass/sass.html',
             target: ''
         },
         {
             title: 'Слайдер Swiper',
-            path: '/conspects/main/swiper/index.html',
+            path: './conspects/main/swiper/index.html',
             target: ''
         },
         {
             title: 'Админ панель TextoLite',
-            path: '/conspects/main/textolite/textolite.html',
+            path: './conspects/main/textolite/textolite.html',
             target: ''
         },
         {
             title: 'SVG спрайты',
-            path: '/conspects/main/svg/svg.html',
+            path: './conspects/main/svg/svg.html',
             target: ''
         },
         {
@@ -51,7 +51,7 @@ const data = {
         },
         {
             title: 'Google Speed',
-            path: '/conspects/main/google_speed/index.html',
+            path: './conspects/main/google_speed/index.html',
             target: ''
         },
     ],
