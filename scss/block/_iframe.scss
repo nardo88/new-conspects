@@ -1,0 +1,22 @@
+.iframe{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background: #e2e2e2;
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #3d3d3d;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background: #3d3d3d;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px #808080;
+        background-color: #808080;
+    }
+}

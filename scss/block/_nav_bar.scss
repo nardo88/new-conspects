@@ -1,29 +1,33 @@
 .nav-bar {
     flex-basis: 50px;
     position: relative;
+    z-index: 20;
 
     &__content {
         width: 100%;
         opacity: 0;
         transition: .3s;
 
+
+
         &-wrapper {
             height: calc(100% - 60px);
             overflow-y: auto;
 
-            &::-webkit-scrollbar-track{
+            &::-webkit-scrollbar-track {
                 border-radius: 10px;
-                background-color:  #3d3d3d;
+                background-color: #3d3d3d;
             }
-            
-            &::-webkit-scrollbar{
+
+            &::-webkit-scrollbar {
                 width: 5px;
                 background: #3d3d3d;
             }
-            &::-webkit-scrollbar-thumb{
+
+            &::-webkit-scrollbar-thumb {
                 border-radius: 10px;
                 -webkit-box-shadow: inset 0 0 6px #808080;
-                background-color:#808080;
+                background-color: #808080;
             }
 
 
@@ -41,6 +45,7 @@
         overflow: hidden;
         background-color: #3d3d3d;
         transition: .3s;
+
 
         &--open {
             transform: translateX(calc(100% - 50px));
@@ -92,7 +97,6 @@
 .main-list {
 
     &__item {
-        padding: 10px;
         border-top: 1px solid #808080;
         cursor: pointer;
         color: #fff;
@@ -107,30 +111,61 @@
 
         &-title {
             position: relative;
+            padding: 7px 10px;
+            transition: .3s;
 
             &:after {
                 content: '';
                 position: absolute;
-                width: 5px;
-                height: 10px;
+                width: 8px;
+                height: 8px;
                 right: 5px;
                 top: 50%;
+                transform-origin: center;
                 transform: translateY(-50%);
                 background: url(../img/arrow.svg) no-repeat center;
                 background-size: contain;
+
+            }
+
+            &:hover {
+                color: #3d3d3d;
+                background-color: rgb(238, 237, 237);
+            }
+
+            // main-list__item-title--active
+            &--active {
+                background-color: #F6483B;
+
+                &:after {
+                    transform: rotate(-90deg) translateX(3px);
+                }
             }
         }
     }
 
     &__body {
+        background-color: #5a5a5a;
+    }
+
+    &__sub-item {
+        padding: 5px 10px 5px 30px;
+        border-top: 1px solid #808080;
+        font-size: 14px;
+        text-transform: none;
+        transition: .3s;
+
+        &:hover {
+            color: #3d3d3d;
+            background-color: rgb(238, 237, 237);
+        }
+
 
     }
+
+    &__wrapper{
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
 }
-
-
-/*
-
-
-    
-    
-*/

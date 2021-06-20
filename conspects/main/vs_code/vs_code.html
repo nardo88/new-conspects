@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="./visualstudiocode_93981.png" alt="">
+    <h1>Установка и настройка VS Code</h1>
+    <p>Саму прогу качаем с <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a></p>
+    <p>Как русифицировать?</p>
+    <p>Открываем расширения и вводим Russian</p>
+    <p>ищем Russian Language Pack for Visual Studio Code
+ и просто его инсталируем. После перезапуска редактор будет на русском    </p>
+ <p>настройки</p>
+<p>Файл с настройками находится по пути: C:\Users\nardo\AppData\Roaming\Code\User</p>
+<p>Открываем файл <b>settings</b> и добавляем туда код</p>
+<xmp>
+    {
+        "files.autoSave": "onFocusChange",
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on",
+        "workbench.startupEditor": "newUntitledFile",
+        "workbench.colorTheme": "Community Material Theme High Contrast",
+        "git.suggestSmartCommit": false,
+        "liveSassCompile.settings.formats": [
+
+            {
+                "format": "compressed",
+                "extensionName": ".css",
+                "savePath": "./css/"
+            }
+        ],
+        "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+        "liveSassCompile.settings.autoprefix": [
+            "> 1%",
+            "last 20 versions"
+        ],
+        "liveServer.settings.donotVerifyTags": true,
+        "explorer.confirmDragAndDrop": false,
+        "[javascript]": {
+            "editor.defaultFormatter": "HookyQR.beautify"
+        },
+        "[html]": {
+            "editor.defaultFormatter": "HookyQR.beautify"
+        },
+        "window.zoomLevel": 0,
+        "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    }
+</xmp>
+<h2>Плагины</h2>
+<p><b>JS Quick Console</b> - позволяет быстро призвать <b>console.log</b> (Ctrl + Shift + L)</p>
+<p><b>Live Server</b> - крутой аналог Browser Sync</p>
+<p><b>Code Runner</b> - Позволяет запускать код JS в консоли отладки</p>
+<p><b>open in browser</b> - позволяет открывать из редатора файлы в браузере</p>
+<p><b>All Autocomplete</b> - позволяет автозаполнять классы или переменные которые мы уже объявили</p>
+<p><b>Autoprefixer</b> - автоматом проставляет префиксы</p>
+<p><b>Beautify</b> - приводит код в красивое положение </p>
+<p><b>ESLint</b> - проверяет правильность кода JS </p>
+<p><b>Sass</b> - Для написания Sass (Scss) файлов</p>
+<p><b>Polacode-2020</b> - делает скриншоты кода. Для этого зажимает Ctrl + Shift + P - вводим >polacode и жмем Enter</p>
+<p><b>Color Picker</b> - позволяет вызвать палитру цветов. Длы высова просто наводим курсор на цвет (#000)</p>
+<p><b>Color Highlight</b> - подсвечивает цвета в CSS</p>
+<p><b>AutoFileName</b> - позволяет указывать автоматом имена в свойстве src для вызова ставим <b style="font-size: 18px;">./</b> </p>
+<p><b>Bracket Pair Colorizer</b> - этот плагин подсвечивает скобки в JS</p>
+<p><b>Highlight Matching Tag</b> - подсвечивает теги в html</p>
+<p><b>Auto import</b> - Автоматически вставляет import при использовании компоненты в react</p>
+<p><b>eCSStractor for VSCode</b> - позволяет копировать разметку по БЭМ в SCSS (сочетание клавиш - shift + f1)</p>
+<p><b>Live SASS Compiler</b> - Этот плагин генерирует css файлы (можно использовать вместо сборщика Preproc)</p>
+<p><b>Как настраивать Live SASS Compiler</b></p>
+<p>После того как плагин установился заходим в параметры - расширения - Live Sass Compile. Находим раздел formats</p>
+<img src="code 1.png" alt="">
+<p>Нажимаем <b>изменить в settings.json</b></p>
+<img src="code 2.png" alt="">
+<p>Если нужно сделать css минимизированным, то указываем такие форматы:</p>
+<img src="code 3.png" alt="">
+
+
+
+<h2>Установка темы</h2>
+<p><b>Material Theme</b> - название темы</p>
+<p><b>Community Material Theme</b> - название цветовой темы</p>
+<h2>Сниппеты</h2>
+<h3>Создание</h3>
+<p>Настройка - пользовательский фрагмент кода</p>
+<p>Вставляем код и сохраняем</p>
+<h4>медиазапрос:</h4>
+<xmp>
+    {
+
+        "media": {
+            "scope": "scss, css",
+            "prefix": "@m",
+            "body": [
+                "@media (max-width: $1px){",
+                "$0",
+                "}"
+            ],
+            "description": "Log output to console"
+        }
+    }
+</xmp>
+
+<h2>Как смотреть верстку с мобильного телефона</h2>
+<p>параметры - расширения - LiveServerConfig - ставим галочку use local IP as host</p>
+
+
+</body>
+</html>
