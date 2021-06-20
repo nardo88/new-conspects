@@ -41,12 +41,17 @@ const data = {
         },
         {
             title: 'GitHub',
-            path: '/conspects/main/github/github.html',
+            path: './conspects/main/github/github.html',
             target: ''
         },
         {
             title: 'FireBase',
             path: 'https://nardo88.github.io/conspects/index/firebase/firebase.html',
+            target: ''
+        },
+        {
+            title: 'Google Speed',
+            path: '/conspects/main/google_speed/index.html',
             target: ''
         },
     ],
