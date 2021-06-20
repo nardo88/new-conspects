@@ -54,6 +54,16 @@ const data = {
             path: './conspects/main/google_speed/index.html',
             target: ''
         },
+        {
+            title: 'WebPack',
+            path: './conspects/main/webpack/index.html',
+            target: ''
+        },
+        {
+            title: 'Mark Down',
+            path: './conspects/main/markdown/index.html',
+            target: ''
+        },
     ],
     teory: {},
     practice: {},
