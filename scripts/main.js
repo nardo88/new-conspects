@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const menu = () => {
         const navBarBody = document.querySelector('.nav-bar__body');
-        const mainListMenu = document.querySelector('.main-list');
         const iframe = document.querySelector('.iframe');
         const overlay = document.querySelector('.overlay');
 
@@ -24,40 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
 
-        // рендер главного меню
-        const renderMainMenu = (data) => {
-            // постойка верхнего уровня меню
-            for (let key in data) {
-                const li = document.createElement('li');
-                li.classList.add('main-list__item');
-                li.setAttribute('data-type', key)
-                li.insertAdjacentHTML('afterbegin', `
-                   <div class="main-list__item-title">${key}</div>
-                   <div class="main-list__wrapper">
-                    <ul class="main-list__body"></ul>
-                   </div>
-                   
-                   
-                `)
-                mainListMenu.insertAdjacentElement('beforeend', li);
-            }
-        }
+   
 
-        const renderMainSection = (data) => {
-            data.forEach(item => {
-                const li = document.createElement('li');
-                li.classList.add('main-list__sub-item')
-                li.textContent = item.title;
-                li.setAttribute('data-path', item.path)
+  
 
-                const parent = mainListMenu.querySelector('.main-list__body')
-                parent.insertAdjacentElement('beforeend', li)
-            })
-        }
 
-        renderMainMenu(data)
 
-        renderMainSection(data.main)
+
+
+
+
 
 
 

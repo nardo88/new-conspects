@@ -65,7 +65,112 @@ const data = {
             target: ''
         },
     ],
-    teory: {},
+    teory: {
+        html: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+
+        ],
+        css: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+ 
+        ],
+        php: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ],
+        JavaScript: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ],
+        React: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ],
+        JQuery: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ],
+        Wordpress: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ],
+        FireBase: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ],
+        Vue: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ],
+        Woocommerce: [
+            {
+                title: 'Теги для работы с текстом',
+                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            },
+            {
+                title: 'Ссылки',
+                path: './conspects/teory/html/links/links.html',
+            },
+        ]
+
+
+    },
     practice: {},
     plugins: {},
     english: {}
