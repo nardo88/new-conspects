@@ -6,7 +6,7 @@ const data = {
         },
         {
             title: 'Нарезка иконок из PSD макета',
-            path: './conspects/main/icon_from_psd/icon_from_psd.html',
+            path: './conspects/main/iconfrompsd/iconfrompsd.html',
             target: ''
         },
         {
