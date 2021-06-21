@@ -25,35 +25,5 @@
     <h2>Указание типов данных у props у функциональных компонент не имеющих состояние</h2>
     <img src="./prim3.jpg" alt="">
 
-
-
-    <script>
-
-        const Summary = ({title, steps, ingredients}) => {
-            return (
-                <>
-                    Some JSX
-                </>
-            )
-        }
-        // задаем типы данных пропсов
-        Summary.propTypes = {
-                title: PropTypes.string,
-                steps: PropTypes.number,
-                ingredients: PropTypes.array,
-            }
-        // так же можем задать значения по умолчанию если 
-        // в пропсах ничего не пришло
-        Summary.defaultProps = {
-            title: 'Заголоквок отсутствует',
-            steps: 0,
-            ingredients: 0,
-        }
-        
-
-        
-
-
-    </script>
 </body>
 </html>
