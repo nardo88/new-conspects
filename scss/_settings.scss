@@ -56,3 +56,10 @@ ul{
     height: 9px;
     fill: #fff;
 }
+
+.link-item{
+    &--active{
+        background-color: #1ab877;
+    }
+}
+

@@ -27,8 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 elem.classList.remove(className)
             } else {
                 elem.classList.add(className)
-
             }
+        }
+
+        const addActiveClass = (data, i, className) => {
+            data.forEach((item, ind) => {
+                item.classList.remove(className)
+                if (ind === i) {
+                    item.classList.add(className)
+
+                }
+            })
         }
 
 
@@ -38,6 +47,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+        // клик по первому уровню меню
+        const firstTitle = document.querySelectorAll('.first__title');
+        const firstBody = document.querySelectorAll('.first__body');
+        const firstItem = document.querySelectorAll('.first__item');
+
+        firstTitle.forEach((item, i) => {
+            item.addEventListener('click', e => {
+                const body = item.nextElementSibling;
+                const height = body.children[0].clientHeight;
+
+                if (body.classList.contains('active')) {
+                    secondHide(firstBody)
+                    addActiveClass(firstItem, null, 'first__item--open')
+
+                } else {
+                    secondHide(firstBody)
+                    body.classList.add('active');
+                    body.style.maxHeight = `${height}px`
+                    addActiveClass(firstItem, i, 'first__item--open')
+                }
+            })
+        })
+
+        // клик по второму уровню меню
+        const secondTitle = document.querySelectorAll('.second__title');
+        const secondBody = document.querySelectorAll('.second__body');
+        const secondItem = document.querySelectorAll('.second__item');
+        async function openSecondMenu() {
+
+        }
+        secondTitle.forEach((item, i) => {
+            item.addEventListener('click', () => {
+                let height = ''
+                const body = item.nextElementSibling;
+                if (body){
+                    height = body.children[0].clientHeight;
+
+                } else {
+                    return
+                }
+
+                if (body.classList.contains('active')) {
+                    secondHide(secondBody)
+                    addActiveClass(secondItem, null, 'second__item--open')
+
+                } else {
+
+                    secondHide(secondBody)
+                    body.classList.add('active');
+                    body.style.maxHeight = `${height}px`
+                    addActiveClass(secondItem, i, 'second__item--open');
+                    const parent = item.parentElement.parentElement.parentElement;
+                    const parentHeight = parent.children[0].offsetHeight;
+                    parent.style.maxHeight = `${parentHeight+height}px`;
+                }
+            })
+        })
 
 
 
@@ -60,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         document.addEventListener('click', e => {
-           
+
             const target = e.target;
 
             if (target.closest('.burger')) {
@@ -69,65 +136,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (target.dataset.path) {
+                const linkItem = document.querySelectorAll('.link-item');
+
+                linkItem.forEach(item => {
+                    item.classList.remove('link-item--active');
+
+                    if (item === target){
+                        item.classList.add('link-item--active');
+
+                    }
+                })
+
                 iframe.src = target.dataset.path;
                 closeMenu();
+
+                
 
             }
 
             if (target.classList.contains('overlay')) {
                 closeMenu();
             }
-
-
-            // Клик по вкладке второго уровня
-            if (target.closest('.second__item')) {
-                const trg = e.target.closest('.second__item');
-                if (trg.dataset.type) {
-                    const secondItem = document.querySelectorAll('[data-type="second"]');
-                    const secondBody = document.querySelectorAll('.second__body');
-
-                    secondItem.forEach((item, i) => {
-                        item.classList.remove('second__item--open')
-                        if (item === trg) {
-                            toggleClass(item, 'second__item--open')
-                            if (secondBody[i].classList.contains('active')) {
-                                item.classList.remove('second__item--open')
-                                secondHide(secondBody);
-                            } else {
-                                secondHide(secondBody);
-                                secondBody[i].classList.add('active');
-                                secondBody[i].style.maxHeight = secondBody[i].children[0].clientHeight + 'px'
-                            }
-                        }
-                    })
-                }
-            }
-
-            // клик по вкладке первого уровня
-            if (target.closest('.first__item')) {
-                const trg = e.target.closest('.first__item');
-                if (trg.dataset.type === 'first') {
-                    const firstItem = document.querySelectorAll('[data-type="first"]');
-                    const firstBody = document.querySelectorAll('.first__body');
-
-                    firstItem.forEach((item, i) => {
-                        item.classList.remove('first__item--open')
-                        if (item === trg) {
-                            toggleClass(item, 'first__item--open')
-                            if (firstBody[i].classList.contains('active')) {
-                                item.classList.remove('first__item--open')
-                                secondHide(firstBody);
-                            } else {
-                                secondHide(firstBody);
-                                firstBody[i].classList.add('active');
-                                firstBody[i].style.maxHeight = firstBody[i].children[0].clientHeight + 'px'
-                            }
-                        }
-                    })
-                }
-            }
-
-
 
         })
     }
