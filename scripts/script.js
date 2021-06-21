@@ -138,8 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 return
             }
-            console.log(body.children[0]);
-            console.log(body.children[0].clientHeight);
 
             if (body.classList.contains('active')) {
                 secondHide(secondBody)
