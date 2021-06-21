@@ -293,7 +293,7 @@ const teory = {
                 title: 'Полифилы',
                 path: './conspects/teory/javaScript/polyfills/index.html',
             },
-                
+
         ],
 
 
@@ -484,6 +484,8 @@ const teory = {
                 title: 'propTypes',
                 path: './conspects/teory/react/propTypes/index.html',
             },
+
+           
                 
         ],
 
