@@ -1,0 +1,25 @@
+.third {
+
+    // .third__item
+
+    &__item {
+        // border-top: 1px solid #737373;
+        border-top: 1px solid #808080;
+        background-color: #656b70;
+
+        &--selected{
+            background-color: #1ab877;
+        }
+
+
+    }
+
+    // .third__title
+
+    &__title {
+        padding: 10px 10px 10px 60px;
+        cursor: pointer;
+        user-select: none;
+
+    }
+}

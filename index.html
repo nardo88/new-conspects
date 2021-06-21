@@ -12,9 +12,24 @@
 </head>
 
 <body>
+    <!-- Начало svg спрайта -->
+    <svg style="display: none;" width="9" height="14" fill="none">
+        <symbol id="arrow" viewBox="0 0 9 14">
+            <path d="m8.797 11.803-4.96-4.81 4.948-4.795a.657.657 0 0 0 0-.951L7.703.197a.707.707 0 0 0-.98 0L.203 6.52a.657.657 0 0 0 0 .951l6.531 6.332a.71.71 0 0 0 .983 0l1.08-1.047a.66.66 0 0 0 0-.954z" />
+        </symbol>
+     
+    </svg>
+    <!-- Конец svg спрайта -->
+
+
+
+
+
+
     <header class="header">
         <h1 class="header__title">DATA<span>forDEVELOPE</span> </h1>
     </header>
+
     <div class="wrapper">
         <div class="nav-bar">
             <div class="nav-bar__body">
@@ -28,111 +43,126 @@
                 </div>
                 <div class="nav-bar__content-wrapper">
                     <div class="nav-bar__content">
-                        <ul class="main-list">
-
-                            <li class="main-list__item" data-type="main">
-                                <div class="main-list__item-title">main</div>
-                                <div class="main-list__wrapper">
-                                    <ul class="main-list__body">
-                                        <li class="main-list__sub-item">
-                                            <div class="main-list__sub-item-title">html</div>
-                                            <div class="main-list__wrapper">
-                                                <ul class="main-list__body">
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/teg_for_text/tegfortext.html">Теги для работы с текстом</li>
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/links/links.html">Ссылки</li>
-                                                </ul>>
-                                            </div>
+                        <!-- начало списка первого уровня -->
+                        <ul class="first">
+                            <!-- Элемент списка первого уровня -->
+                            <li data-type="first" class="first__item">
+                                <div class="first__title"><span>Main</span> <svg class="icon"> <use xlink:href="#arrow"></use> </svg> </div>
+                                <div class="first__body">
+                                    <!-- Начало списка второго уровня -->
+                                    <ul class="second">
+                                        <li class="second__item ">
+                                            <div data-path="./conspects/main/vs_code/vs_code.html" class="second__title">Настройка VS Code</div>
+                                        </li>
+                                        <li class="second__item">
+                                            <div data-path="./conspects/main/vs_code/vs_code.html" class="second__title">Настройка VS Code</div>
+                                        </li>
+                                        <li class="second__item">
+                                            <div data-path="./conspects/main/vs_code/vs_code.html" class="second__title">Настройка VS Code</div>
+                                        </li>
+                                        <li class="second__item">
+                                            <div data-path="./conspects/main/vs_code/vs_code.html" class="second__title">Настройка VS Code</div>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
-                            <li class="main-list__item" data-type="teory">
-                                <div class="main-list__item-title">Teory</div>
-                                <div class="main-list__wrapper">
-                                    <ul class="main-list__body">
-                                        <li class="main-list__sub-item">
-                                            <div class="main-list__sub-item-title">html</div>
-                                            <div class="main-list__wrapper">
-                                                <ul class="main-list__body">
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/teg_for_text/tegfortext.html">Теги для работы с текстом</li>
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/links/links.html">Ссылки</li>
-                                                </ul>>
+
+                               <!-- Второй элемент списка первого уровня -->
+                            <li data-type="first" class="first__item">
+                                <div class="first__title"><span>Teory</span> <svg class="icon"> <use xlink:href="#arrow"></use> </svg></div>
+                                <div class="first__body">
+                                    <!-- Начало списка второго уровня -->
+                                    <ul class="second">
+                                        <li data-type="second" class="second__item">
+                                            <div class="second__title "><span>HTML</span> <svg class="icon"> <use xlink:href="#arrow"></use> </svg></div>
+                                            <div class="second__body">
+                                                <!-- Начало списка третьего уровня -->
+                                                <ul class="third">
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/teg_for_text/tegfortext.html" class="third__title">Теги для работы с текстом</div>
+                                                    </li>
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/links/links.html" class="third__title">Ссылки</div>
+                                                    </li>
+                                                </ul>
+
                                             </div>
                                         </li>
-                                        <li class="main-list__sub-item">
-                                            <div class="main-list__sub-item-title">JavaScript</div>
-                                            <div class="main-list__wrapper">
-                                                <ul class="main-list__body">
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/teg_for_text/tegfortext.html">Теги для работы с текстом</li>
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/links/links.html">Ссылки</li>
-                                                </ul>>
+
+                                        <li data-type="second" class="second__item">
+                                            <div class="second__title "><span>CSS</span> <svg class="icon"> <use xlink:href="#arrow"></use> </svg></div>
+                                            <div class="second__body">
+                                                <ul class="third">
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/teg_for_text/tegfortext.html" class="third__title">Теги для работы с текстом</div>
+                                                    </li>
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/links/links.html" class="third__title">Ссылки</div>
+                                                    </li>
+                                                 
+                                                </ul>
                                             </div>
                                         </li>
+                                       
                                     </ul>
                                 </div>
                             </li>
 
-                            <li class="main-list__item" data-type="teory">
-                                <div class="main-list__item-title">Practice</div>
-                                <div class="main-list__wrapper">
-                                    <ul class="main-list__body">
-                                        <li class="main-list__sub-item">
-                                            <div class="main-list__sub-item-title">html</div>
-                                            <div class="main-list__wrapper">
-                                                <ul class="main-list__body">
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/teg_for_text/tegfortext.html">Теги для работы с текстом</li>
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/links/links.html">Ссылки</li>
-                                                </ul>>
-                                            </div>
-                                        </li>
-                                        <li class="main-list__sub-item">
-                                            <div class="main-list__sub-item-title">JavaScript</div>
-                                            <div class="main-list__wrapper">
-                                                <ul class="main-list__body">
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/teg_for_text/tegfortext.html">Теги для работы с текстом</li>
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/links/links.html">Ссылки</li>
-                                                </ul>>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
 
-                            <li class="main-list__item" data-type="teory">
-                                <div class="main-list__item-title">plugins</div>
-                                <div class="main-list__wrapper">
-                                    <ul class="main-list__body">
-                                        <li class="main-list__sub-item">
-                                            <div class="main-list__sub-item-title">html</div>
-                                            <div class="main-list__wrapper">
-                                                <ul class="main-list__body">
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/teg_for_text/tegfortext.html">Теги для работы с текстом</li>
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/links/links.html">Ссылки</li>
-                                                </ul>>
+                            <li data-type="first" class="first__item">
+                                <div class="first__title"><span>Practice</span> <svg class="icon"> <use xlink:href="#arrow"></use> </svg></div>
+                                <div class="first__body">
+                                    <!-- Начало списка второго уровня -->
+                                    <ul class="second">
+                                        <li data-type="second" class="second__item">
+                                            <div class="second__title "><span>HTML</span> <svg class="icon"> <use xlink:href="#arrow"></use> </svg></div>
+                                            <div class="second__body">
+                                                <!-- Начало списка третьего уровня -->
+                                                <ul class="third">
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/teg_for_text/tegfortext.html" class="third__title">Теги для работы с текстом</div>
+                                                    </li>
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/links/links.html" class="third__title">Ссылки</div>
+                                                    </li>
+                                                </ul>
+
                                             </div>
                                         </li>
-                                        <li class="main-list__sub-item">
-                                            <div class="main-list__sub-item-title">JavaScript</div>
-                                            <div class="main-list__wrapper">
-                                                <ul class="main-list__body">
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/teg_for_text/tegfortext.html">Теги для работы с текстом</li>
-                                                    <li class="main-list__sub-item" data-path="./conspects/teory/html/links/links.html">Ссылки</li>
-                                                </ul>>
+
+                                        <li data-type="second" class="second__item">
+                                            <div class="second__title "><span>CSS</span> <svg class="icon"> <use xlink:href="#arrow"></use> </svg></div>
+                                            <div class="second__body">
+                                                <ul class="third">
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/teg_for_text/tegfortext.html" class="third__title">Теги для работы с текстом</div>
+                                                    </li>
+                                                    <li class="third__item">
+                                                        <div data-path="./conspects/teory/html/links/links.html" class="third__title">Ссылки</div>
+                                                    </li>
+                                                 
+                                                </ul>
                                             </div>
                                         </li>
+                                       
                                     </ul>
                                 </div>
                             </li>
+                        </ul>
+
+                           
+
 
                     </div>
                 </div>
-                <div class="content">
-                    <iframe class="iframe" src="" frameborder="0"></iframe>
-                </div>
+                
             </div>
-
-
+        </div>
+        <div class="content">
+            <iframe class="iframe" src="./conspects/main/vs_code/vs_code.html" frameborder="0"></iframe>
+        </div>
+    </div>
 
             <div class="overlay"></div>
 

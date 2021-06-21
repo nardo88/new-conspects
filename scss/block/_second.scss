@@ -1,0 +1,44 @@
+.second {
+
+    // .second__item
+
+    &__item {
+        border-top: 1px solid #808080;
+        background-color: #595959;
+
+        &--open{
+            background-color: #18a8e6;
+
+            .icon{
+                transform: rotate(-90deg);
+            }
+        }
+
+        &--selected{
+            background-color: #1ab877;
+        }
+
+      
+    }
+
+    // .second__title
+
+    &__title {
+        padding: 10px 10px 10px 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+
+
+    }
+
+    // .second__body
+
+    &__body {
+        overflow: hidden;
+        max-height: 0;
+        transition: .3s;
+    }
+}

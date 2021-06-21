@@ -1,0 +1,47 @@
+.first {
+
+    // .first__item
+
+    &__item {
+        border-top: 1px solid #808080;
+
+        &:last-child{
+            border-bottom: 1px solid #808080;
+
+        }
+
+
+        &--open{
+            background-color: #F6483B;
+
+            .icon{
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    // .first__title
+
+    &__title {
+        text-transform: uppercase;
+        user-select: none;
+        padding: 10px 10px 10px 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+
+    }
+
+    // .first__body
+
+    &__body {
+        overflow: hidden;
+        max-height: 0;
+        transition: .3s;
+    }
+}
+
+

@@ -15,17 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
-        const secondHide = () => {
-            mainMenuWrapper.forEach(item => {
+        const secondHide = (data) => {
+            data.forEach(item => {
                 item.style.maxHeight = '0px';
                 item.classList.remove('active');
             })
         }
 
+        const toggleClass = (elem, className) => {
+            if (elem.classList.contains(className)) {
+                elem.classList.remove(className)
+            } else {
+                elem.classList.add(className)
 
-   
+            }
+        }
 
-  
+
+
+
 
 
 
@@ -52,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         document.addEventListener('click', e => {
+           
             const target = e.target;
 
             if (target.closest('.burger')) {
@@ -60,17 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (target.dataset.path) {
-                const mainListSubItem = document.querySelectorAll('.main-list__sub-item')
-
-                mainListSubItem.forEach(item => {
-                    item.classList.remove('main-list__sub-item--active')
-                    if (item === target) {
-                        target.classList.add('main-list__sub-item--active')
-                    }
-                })
-
                 iframe.src = target.dataset.path;
                 closeMenu();
+
             }
 
             if (target.classList.contains('overlay')) {
@@ -78,36 +79,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
 
+            // Клик по вкладке второго уровня
+            if (target.closest('.second__item')) {
+                const trg = e.target.closest('.second__item');
+                if (trg.dataset.type) {
+                    const secondItem = document.querySelectorAll('[data-type="second"]');
+                    const secondBody = document.querySelectorAll('.second__body');
 
-            if (target.classList.contains('main-list__item-title')) {
-                const mainMenuItem = document.querySelectorAll('.main-list__item-title');
-                const mainMenuWrapper = document.querySelectorAll('.main-list__wrapper');
-
-                mainMenuItem.forEach((item, i) => {
-                    item.classList.remove('main-list__item-title--active');
-                    if (target === item) {
-                        if (mainMenuWrapper[i].classList.contains('active')) {
-                            item.classList.remove('main-list__item-title--active');
-
-                            mainMenuWrapper.forEach(elem => {
-                                elem.style.maxHeight = '0px';
-                                elem.classList.remove('active');
-                            })
-                        } else {
-
-                            mainMenuWrapper.forEach(a => {
-                                a.style.maxHeight = '0px';
-                                a.classList.remove('active');
-                            })
-
-                            mainMenuWrapper[i].classList.add('active')
-                            mainMenuWrapper[i].style.maxHeight = mainMenuWrapper[i].children[0].clientHeight + 'px';
-
-                            item.classList.add('main-list__item-title--active');
+                    secondItem.forEach((item, i) => {
+                        item.classList.remove('second__item--open')
+                        if (item === trg) {
+                            toggleClass(item, 'second__item--open')
+                            if (secondBody[i].classList.contains('active')) {
+                                item.classList.remove('second__item--open')
+                                secondHide(secondBody);
+                            } else {
+                                secondHide(secondBody);
+                                secondBody[i].classList.add('active');
+                                secondBody[i].style.maxHeight = secondBody[i].children[0].clientHeight + 'px'
+                            }
                         }
-                    }
-                })
+                    })
+                }
             }
+
+            // клик по вкладке первого уровня
+            if (target.closest('.first__item')) {
+                const trg = e.target.closest('.first__item');
+                if (trg.dataset.type === 'first') {
+                    const firstItem = document.querySelectorAll('[data-type="first"]');
+                    const firstBody = document.querySelectorAll('.first__body');
+
+                    firstItem.forEach((item, i) => {
+                        item.classList.remove('first__item--open')
+                        if (item === trg) {
+                            toggleClass(item, 'first__item--open')
+                            if (firstBody[i].classList.contains('active')) {
+                                item.classList.remove('first__item--open')
+                                secondHide(firstBody);
+                            } else {
+                                secondHide(firstBody);
+                                firstBody[i].classList.add('active');
+                                firstBody[i].style.maxHeight = firstBody[i].children[0].clientHeight + 'px'
+                            }
+                        }
+                    })
+                }
+            }
+
+
+
         })
     }
     menu()
