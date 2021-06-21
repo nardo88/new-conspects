@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="own.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Делегирование</h1>
+    <div class="container">
+        <ul class="list">
+            <li class="list__item"><a href="#" class="list__link">JavaScript</a></li>
+            <li class="list__item"><a href="#" class="list__link">CSS</a></li>
+            <li class="list__item"><a href="#" class="list__link">HTML</a></li>
+            <li class="list__item"><a href="#" class="list__link">React</a></li>
+            <li class="list__item"><a href="#" class="list__link">PHP</a></li>
+            <li class="list__item"><a href="#" class="list__link">Wordpress</a></li>
+        </ul>
+        <span class="text"></span>
+    </div>
+
+    <h2>верстка</h2>
+    <img src="prim1.jpg" alt="" >
+
+    <h2>Код JS</h2>
+    <img src="prim2.jpg" alt="" >
+
+    <p>В этом контексте мы слушаем событие клика не по элементам а по самому контейнеру, используя метод <b>closest</b> мы добираемся до элемента с нужным классом и если мы его поймали то выполняем нужную инструкцию. Это и есть делегирование.</p>
+    <h2>Иные способы получения элемента</h2>
+    <p><b>tagName</b> - имя тега необходимо писать капсом</p>
+    <div class="wrapper">
+        <span class="txt"></span>
+        <button class="btn_tagName">click me</button>
+    </div>
+    <img src="prim3.jpg" alt="" >
+    <p><b>contains</b> - мы проверяем имеется ли у элемента определенный класс</p>
+    <div class="wrapper2">
+        <ul class="list2">
+            <li class="item2">JavaScript</li>
+            <li class="item2">React</li>
+            <li class="item2">CSS</li>
+            <li class="item2">HTML</li>
+        </ul>
+    </div>
+
+    <img src="prim4.jpg" alt="" >
+
+    <p><b>matches</b>  - это метод который принимает селектор (любой), может даже принимать несколько</p>
+    <img src="prim5.jpg" alt="" >
+    <p>т.е. таргетом станет либо элементс id === id либо элемент с классом === class</p>
+</body>
+</html>

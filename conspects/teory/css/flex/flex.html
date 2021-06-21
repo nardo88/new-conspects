@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Шпаргалка по Flexbox CSS</h1>
+
+	<h2>display</h2>
+	<p>Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе</p>
+	<ul>
+		<li><b>flex</b> - Элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели.</li>
+		<li><b>inline-flex</b> - Элемент ведёт себя как строчный и выкладывает содержимое согласно флекс-модели.</li>
+	</ul>
+	<br><br><br>
+	<h3>Больше информации по FLEX  <a href="https://tpverstak.ru/flex-cheatsheet/" target="_blank">ЗДЕСЬ</a></h3>
+	
+
+	<h2>flex-direction</h2>
+	<p>Свойство flex-direction задаёт направление основных осей в контейнере и тем самым определяет положение флексов в контейнере. На само направление также влияет значение атрибута dir у контейнера.</p>
+	<ul>
+		<li><b>row</b> - Главная ось направлена так же, как и ориентация текста, по умолчанию слева направо. Если значение dir задано как rtl, то направление оси идёт справа налево.</li>
+		<li><b>row-reverse</b> - Похоже на значение row, но меняются местами начальная и конечная точки и главная ось направлена справа налево. Если значение dir задано как rtl, то направление оси идёт слева направо.</li>
+		<li><b>column</b> - Главная ось располагается вертикально и направлена сверху вниз.</li>
+		<li><b>column-reverse</b> - Главная ось располагается вертикально, но меняется положение начальной и конечной точек и ось направлена снизу вверх.</li>
+	</ul>
+
+	<div class="prim1">
+
+		<input class="buttons" type="button" value="row" onclick="fun1_1()">
+		<input class="buttons" type="button" value="row-reverse" onclick="fun1_2()"><br>
+		<input class="buttons" type="button" value="column" onclick="fun1_3()">
+		<input class="buttons" type="button" value="column-reverse" onclick="fun1_4()">
+		<br>
+		<div class="parent1" id="parent1">
+			
+			<div class="child1">1</div>
+			<div class="child1">2</div>
+			<div class="child1">3</div>
+
+		</div>
+
+		
+	</div>
+
+
+	<br><br><br>
+	<h2>flex-wrap</h2>
+	<p>Свойство flex-wrap Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк. Если перенос строк допускается, то свойство также позволяет контролировать направление, в котором выкладываются строки.</p>
+	<ul>
+		<li><b>nowrap</b> - Флексы выстраиваются в одну линию.</li>
+		<li><b>wrap</b> - Флексы выстраиваются в несколько строк, их направление задаётся свойством flex-direction.</li>
+		<li><b>wrap-reverse</b> - Флексы выстраиваются в несколько строк, в направлении, противоположном flex-direction.</li>
+	</ul>
+
+	<div>
+		<input class="buttons" type="button" value="nowrap" onclick="fun2_1()">
+		<input class="buttons" type="button" value="wrap" onclick="fun2_2()"><br>
+		<input class="buttons" type="button" value="wrap-reverse" onclick="fun2_3()">
+		<br>
+		<div class="parent1" id="parent2">
+			
+			<div class="child2">1</div>
+			<div class="child2">2</div>
+			<div class="child2">3</div>
+			<div class="child2">4</div>
+
+		</div>
+	</div>
+
+<br><br><br>
+	<h2>justify-content</h2>
+	<p>Свойство justify-content определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Это делается после того, как применяются размеры и автоматические отступы, за исключением ситуации, когда по крайней мере у одного элемента flex-grow больше нуля. При этом не остаётся никакого свободного пространства для манипулирования.</p>
+	
+
+	<ul>
+		<li><b>flex-start</b> - Флексы прижаты к началу строки.</li>
+		<li><b>flex-end</b> - Флексы прижаты к концу строки.
+center</li>
+		<li><b>center</b> - Флексы выравниваются по центру строки.</li>
+		<li><b>space-between</b> - Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.</li>
+		<li><b>space-around</b> - Флексы равномерно распределяются по всей строке. Пустое пространство перед первым и после последнего элементов равно половине пространства между двумя соседними элементами.</li>
+		<li><b>space-evenly</b> - Флексы распределяются так, что расстояние между любыми двумя соседними элементами, а также перед первым и после последнего, было одинаковым.</li>
+		
+	</ul>
+
+	<div>
+		<input class="buttons" type="button" value="flex-start" onclick="fun3_1()">
+		<input class="buttons" type="button" value="flex-end" onclick="fun3_2()">
+		<input class="buttons" type="button" value="center" onclick="fun3_3()"><br>
+		<input class="buttons" type="button" value="space-between" onclick="fun3_4()">
+		<input class="buttons" type="button" value="space-around" onclick="fun3_5()">
+		<input class="buttons" type="button" value="space-evenly" onclick="fun3_6()">
+		<br>
+		<div class="parent1" id="parent3" >
+			
+			<div class="child1">1</div>
+			<div class="child1">2</div>
+			<div class="child1">3</div>
+			<div class="child1">4</div>
+
+		</div>
+	</div>
+
+
+	<br><br><br>
+	<h2>align-items</h2>
+	<p>Свойство align-items выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении.</p>
+
+	<ul>
+		<li><b>flex-start</b> - Флексы выравниваются в начале поперечной оси контейнера.</li>
+		<li><b>flex-end</b> - Флексы выравниваются в конце поперечной оси контейнера.</li>
+		<li><b>center</b> - Флексы выравниваются по линии поперечной оси.</li>
+		<li><b>baseline</b> - Флексы выравниваются по их базовой линии.</li>
+		<li><b>Stretch</b> - Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера.</li>
+	</ul>
+
+	<div>
+		<input class="buttons" type="button" value="flex-start" onclick="fun4_1()">
+		<input class="buttons" type="button" value="flex-end" onclick="fun4_2()">
+		<input class="buttons" type="button" value="center" onclick="fun4_3()"><br>
+		<input class="buttons" type="button" value="baseline" onclick="fun4_4()">
+		<input class="buttons" type="button" value="Stretch" onclick="fun4_5()">
+		
+		<br>
+		<div class="parent1" id="parent4" style="align-items: flex-start;">
+			
+			<div class="child1">1</div>
+			<div class="child1">2</div>
+			<div class="child1">3</div>
+			<div class="child1">4</div>
+
+		</div>
+	</div>
+
+
+	<br><br><br>
+	<h2>align-self</h2>
+	<p>Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items. Применяется кo: flex элементам.</p>
+
+	<ul>
+		<li><b>flex-start</b> - Элемент выравнивается в начале поперечной оси контейнера.</li>
+		<li><b>flex-end</b> - Элемент выравнивается в конце поперечной оси контейнера.</li>
+		<li><b>center</b> - Элемент выравнивается по центральной линии на поперечной оси.</li>
+		<li><b>baseline</b> - Элемент выравнивается по базовой линии текста.</li>
+		<li><b>Stretch</b> - Элемент растягивается таким образом, чтобы занять всё свободное пространство контейнера по поперечной оси.</li>
+	</ul>
+	
+	<div>
+		<input class="buttons" type="button" value="flex-start" onclick="fun5_1()">
+		<input class="buttons" type="button" value="flex-end" onclick="fun5_2()">
+		<input class="buttons" type="button" value="center" onclick="fun5_3()"><br>
+		<input class="buttons" type="button" value="baseline" onclick="fun5_4()">
+		<input class="buttons" type="button" value="Stretch" onclick="fun5_5()">
+		
+		<br>
+		<div class="parent1"  >
+			
+			<div class="child1">1</div>
+			<div class="child1">2</div>
+			<div id="child4" class="child1" style="align-self: flex-start;">3</div>
+			<div class="child1">4</div>
+
+		</div>
+	</div>
+	
+
+
+	<br><br><br>
+	<h2>align-content</h2>
+	<p>Свойство align-content задаёт тип выравнивания строк внутри flex контейнера по поперечной оси при наличии свободного пространства. Применяется к: flex контейнеру.</p>
+	<ul>
+		<li><b>flex-start</b> - Строки располагаются в начале поперечной оси. Каждая следующая строка идёт вровень с предыдущей.</li>
+		<li><b>flex-end</b> - Строки располагаются начиная с конца поперечной оси. Каждая предыдущая строка идёт вровень со следующей.</li>
+		<li><b>center</b> - Строки располагаются по центру контейнера.</li>
+		<li><b>space-between</b> - Строки равномерно распределяются в контейнере и расстояние между ними одинаково.</li>
+		<li><b>space-around</b> - Строки равномерно распределяются таким образом, чтобы пространство между двумя соседними строками было одинаковым. Пустое пространство перед первой строкой и после последней строки равно половине пространства между двумя соседними строками.</li>
+		<li><b>space-evenly</b> - Строки распределяются равномерно. Пустое пространство перед первой строкой и после последней строки имеет ту же ширину, что и у других строк.</li>
+		<li><b>stretch</b> - Строки равномерно растягиваются, заполняя свободное пространство.</li>
+	</ul>
+	<div>
+		<input class="buttons" type="button" value="flex-start" onclick="fun6_1()">
+		<input class="buttons" type="button" value="flex-end" onclick="fun6_2()">
+		<input class="buttons" type="button" value="center" onclick="fun6_3()"><br>
+		<input class="buttons" type="button" value="space-between" onclick="fun6_4()">
+		<input class="buttons" type="button" value="space-around" onclick="fun6_5()">
+		<input class="buttons" type="button" value="space-evenly" onclick="fun6_6()">
+		<input class="buttons" type="button" value="stretch" onclick="fun6_7()">
+		
+		<br>
+		<div class="parent1" id="parent5" style="align-content: flex-start; flex-wrap: wrap;">
+			
+			<div class="child3">1</div>
+			<div class="child3">2</div>
+			<div class="child3">3</div>
+			<div class="child3">4</div>
+
+		</div>
+	</div>
+
+	<h2>order</h2>
+	<p>Свойство order определяет порядок вывода флексов внутри флекс-контейнера. Элементы располагаются согласно значениям свойства order от меньшего к большему. При равных значениях order элементы выводятся в том порядке, в каком они появляются в исходном коде</p>
+	<p><b>Значение по умолчанию: </b>0</p>
+	<div class="container__order order">
+		<div class="order__buttons">
+			<button class="order__btn order__-1">-1</button>
+			<button class="order__btn order__0">0</button>
+			<button class="order__btn order__1">1</button>
+		</div>
+		<div class="order__flex-container">
+			<div class="order__flex-element">1</div>
+			<div class="order__flex-element">2</div>
+			<div class="order__flex-element order__item">3</div>
+			<div class="order__flex-element">4</div>
+		</div>	
+	</div>
+
+	<h2>flex-grow</h2>
+	<p>Свойство flex-grow задает коэффициент роста flex для заданного числа. По умолчанию значение 0. Если поставить 1 то флекс элемент будет занимать все свободное пространство, если у родителя оно имеется.</p>
+
+	<div class="grow">
+		<div class="grow__buttons">
+			<button class="grow__btn buttons">0</button>
+			<button class="grow__btn buttons">1</button>
+		</div>
+		<div class="grow__flex-container parent1">
+			<div class="grow__flex-element">1</div>
+			<div class="grow__flex-element">2</div>
+			<div class="grow__flex-element grow__item">3</div>
+			<div class="grow__flex-element">4</div>
+		</div>
+	</div>
+
+	<h2>flex-shrink</h2>
+	<p>Свойство flex-shrink задает коэффициент сжатия flex с заданным числом. Отрицательное значение не валидно. Иными словами flex контейнер, если его флех элементы не помещаются внутри него с теми размерами какие указаны у флекс элементов, то контейнер их сожмет. flex-shrink задает коефициент, готов ли элемент сжиматься. если указать значение 0, то элемент не будет сжиматься, а те элементы у которых будет значение по умолчанию (1)  они сожмуться еще сильнее. (В примере ширина flex-элементов 50%)</p>
+	<div class="shrink">
+		<div class="shrink__buttons">
+			<button class="shrink__btn buttons">0</button>
+			<button class="shrink__btn buttons">1</button>
+		</div>
+		<div class="shrink__flex-container parent1">
+			<div class="shrink__flex-element">1</div>
+			<div class="shrink__flex-element">2</div>
+			<div class="shrink__flex-element shrink__item">3</div>
+			<div class="shrink__flex-element">4</div>
+		</div>
+	</div>
+
+	<h2>flex-basis</h2>
+	<p>Свойство flex-basis определяет основу флекса, которая является начальным размером элемента. Похоже на свойства width и height, к которым добавляется содержимое элемента. (ширина по умолчанию элементов задано - 10%)</p>
+	<div class="basis">
+		<div class="basis__buttons">
+			<button class="basis__btn buttons">30%</button>
+			<button class="basis__btn buttons">50%</button>
+			<button class="basis__btn buttons">auto</button>
+		</div>
+		<div class="basis__flex-container parent1">
+			<div class="basis__flex-element">1</div>
+			<div class="basis__flex-element">2</div>
+			<div class="basis__flex-element basis__item">3</div>
+			<div class="basis__flex-element">4</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
