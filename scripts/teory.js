@@ -301,11 +301,196 @@ const teory = {
         // ================================================================================ React =============================================
         React: [
             {
-                title: 'Теги для работы с текстом',
-                path: './conspects/teory/html/teg_for_text/tegfortext.html',
+                title: 'create-react-app',
+                path: './conspects/teory/react/create_react_app/index.html',
             },
-         
+            {
+                title: 'Особенности JSX',
+                path: './conspects/teory/react/jsx/index.html',
+            },
+            {
+                title: 'Работа со стилями в React',
+                path: './conspects/teory/react/style/index.html',
+            },
+            {
+                title: 'Компонента',
+                path: './conspects/teory/react/componenta/index.html',
+            },
+            {
+                title: 'Props',
+                path: './conspects/teory/react/props/index.html',
+            },
+            {
+                title: 'Роутинг',
+                path: './conspects/teory/react/route/index.html',
+            },
+            {
+                title: 'Мапинг',
+                path: './conspects/teory/react/map/index.html',
+            },
+            {
+                title: 'События',
+                path: './conspects/teory/react/events/index.html',
+            },
+            {
+                title: 'Ref',
+                path: './conspects/teory/react/ref/index.html',
+            },
+            {
+                title: 'Сallback через props',
+                path: './conspects/teory/react/callback_props/index.html',
+            },
+            {
+                title: 'Flux',
+                path: './conspects/teory/react/flux/index.html',
+            },
+            {
+                title: 'Циклическая зависимость',
+                path: './conspects/teory/react/cyclical_dependence/index.html',
+            },
+            {
+                title: 'ООП в React',
+                path: './conspects/teory/react/oop/index.html',
+            },
+            {
+                title: 'Dispatch',
+                path: './conspects/teory/react/dispatch/index.html',
+            },
+            {
+                title: 'Reducer',
+                path: './conspects/teory/react/reduser/index.html',
+            },
+            {
+                title: 'Redux',
+                path: './conspects/teory/react/redux/index.html',
+            },
+            {
+                title: 'Контейнерные компоненты',
+                path: './conspects/teory/react/container/index.html',
+            },
+            {
+                title: 'Context API',
+                path: './conspects/teory/react/context/index.html',
+            },
+            {
+                title: 'React-Redux',
+                path: './conspects/teory/react/react-redux/index.html',
+            },
+            {
+                title: 'Rest API',
+                path: './conspects/teory/react/rest-api/index.html',
+            },
+            {
+                title: 'Классовые компоненты',
+                path: './conspects/teory/react/class/index.html',
+            },
+            {
+                title: 'Жизненный цикл компоненты',
+                path: './conspects/teory/react/lifecycle/index.html',
+            },
+            {
+                title: 'Пагинация',
+                path: './conspects/teory/react/pagination/index.html',
+            },
+            {
+                title: 'Хок withRouter',
+                path: './conspects/teory/react/withRouter/index.html',
+            },
+            {
+                title: 'Логинизация',
+                path: './conspects/teory/react/login/index.html',
+            },
+            {
+                title: 'DAL (уровень доступа к данным)',
+                path: './conspects/teory/react/dal/index.html',
+            },
+            {
+                title: 'Redux-Thunk',
+                path: './conspects/teory/react/thunk/index.html',
+            },
+            {
+                title: 'Redirect',
+                path: './conspects/teory/react/redirect/index.html',
+            },
+            {
+                title: 'High Order Component (ХОК)',
+                path: './conspects/teory/react/hoc/index.html',
+            },
+            {
+                title: 'Compose',
+                path: './conspects/teory/react/compose/index.html',
+            },
+            {
+                title: 'Local state',
+                path: './conspects/teory/react/local_state/index.html',
+            },
+            {
+                title: 'Redux-form',
+                path: './conspects/teory/react/redux_form/index.html',
+            },
+            {
+                title: 'LogIn LogOut',
+                path: './conspects/teory/react/login_logout/index.html',
+            },
+            {
+                title: 'Инициализация приложения',
+                path: './conspects/teory/react/initial/index.html',
+            },
+            {
+                title: 'Reselect',
+                path: './conspects/teory/react/reselect/index.html',
+            },
+            {
+                title: 'Оптимизация',
+                path: './conspects/teory/react/optimization/index.html',
+            },
+            {
+                title: 'Тестирование',
+                path: './conspects/teory/react/testing/index.html',
+            },
+            {
+                title: 'Загрузка файлов на сервер',
+                path: './conspects/teory/react/upload_files/index.html',
+            },
+            {
+                title: 'Deploy на GitHub',
+                path: './conspects/teory/react/deploy/index.html',
+            },
+            {
+                title: 'useState',
+                path: './conspects/teory/react/useState/index.html',
+            },
+            {
+                title: 'useEffect',
+                path: './conspects/teory/react/useEffect/index.html',
+            },
+            {
+                title: 'useRef',
+                path: './conspects/teory/react/useRef/index.html',
+            },
+            {
+                title: 'useMemo',
+                path: './conspects/teory/react/useMemo/index.html',
+            },
+            {
+                title: 'useContext',
+                path: './conspects/teory/react/useContext/index.html',
+            },
+            {
+                title: 'useReducer',
+                path: './conspects/teory/react/useReducer/index.html',
+            },
+            {
+                title: 'propTypes',
+                path: './conspects/teory/react/propTypes/index.html',
+            },
+                
         ],
+
+
+
+        // ================================================================================ JQuery =============================================
+
         JQuery: [
             {
                 title: 'Теги для работы с текстом',
