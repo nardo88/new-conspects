@@ -134,13 +134,7 @@ const practice = {
         },
      
     ],
-    JQuery: [
-        {
-            title: 'Теги для работы с текстом',
-            path: './conspects/practice/html/teg_for_text/tegfortext.html',
-        },
-      
-    ],
+  
     Wordpress: [
         {
             title: 'Теги для работы с текстом',
@@ -157,8 +151,8 @@ const practice = {
     ],
     Polifils: [
         {
-            title: 'Теги для работы с текстом',
-            path: './conspects/practice/html/teg_for_text/tegfortext.html',
+            title: 'scrollTo',
+            path: './conspects/practice/polyfill/scrollTo/index.html',
         },
       
     ],
