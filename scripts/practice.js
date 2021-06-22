@@ -149,6 +149,13 @@ const practice = {
         },
       
     ],
+    Plugins: [
+        {
+            title: 'Плагины',
+            path: './conspects/practice/plugins/index.html',
+        },
+      
+    ],
    
 
 
