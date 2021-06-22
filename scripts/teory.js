@@ -559,14 +559,23 @@ const teory = {
 
     ],
     Vue: [{
-            title: 'Теги для работы с текстом',
-            path: './conspects/teory/html/teg_for_text/tegfortext.html',
+            title: 'Инсталяция фреймворка',
+            path: './conspects/teory/Vue/install/index.html',
         },
 
     ],
-    Woocommerce: [{
-            title: 'Теги для работы с текстом',
-            path: './conspects/teory/html/teg_for_text/tegfortext.html',
+    Woocommerce: [
+        {
+            title: 'Установка Woocommerce',
+            path: './conspects/teory/woocommerce/install/index.html',
+        },
+        {
+            title: 'Создание темы',
+            path: './conspects/teory/woocommerce/create-theme/index.html',
+        },
+        {
+            title: 'Подключаем стили и скрипты',
+            path: './conspects/teory/woocommerce/add_styles_and_scripts/index.html',
         },
 
     ]

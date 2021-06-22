@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Инсталяция фреймфорка</h1>
+    <p>
+        <a href="https://ru.vuejs.org/v2/guide/deployment.html">Ссылка на документацию</a>
+    </p>
+    <h1>Через CDN</h1>
+    <p>ссылка</p>
+    <xmp><script src="https://unpkg.com/vue"></script></xmp>
+    <h3>Пример Кода</h3>
+    <h4>HTML</h4>
+    <img src="./img1.jpg" alt="">
+    <h4>JavaScript</h4>
+    <img src="./img2.jpg" alt="">
+
+    <h4>Результат</h4>
+
+
+
+    <div id="app">
+        <input type="text" v-model="message">
+        <p>{{message}}</p>
+        <button v-on:click="sayHi">Sya hi!</button>
+        <p>Кнопка выведет в консоль значение переменной message</p>
+    </div>
+
+    <h2>Через npm</h2>
+
+    <span class="code">npm i -s vue</span>
+    <p>Подключаем библиотеку через require</p>
+    <img src="./img3.jpg" alt="">
+    <p>Этот вариант у меня не заработал. Разница между клиентами рендера через npm и клиентом через cdn</p>
+
+
+
+
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello world'
+        },
+        methods: {
+            sayHi() {
+                console.log(this.message);
+            }
+        }
+    })
+</script>
+
+
+
+</body>
+</html>
