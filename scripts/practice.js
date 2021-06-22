@@ -125,6 +125,10 @@ const practice = {
             title: 'Загрузка файлов через DnD',
             path: './conspects/practice/JavaScript/drag_and_drop/index.html',
         },
+        {
+            title: 'Буфер обмена',
+            path: './conspects/practice/JavaScript/clipboard/index.html',
+        },
        
     ],
     React: [

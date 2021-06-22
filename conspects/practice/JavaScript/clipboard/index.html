@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./own.css">
+</head>
+<body>
+    <h1>Работа с буфером обмена с помощью JavaScript</h1>
+    <h3>Результат</h3>
+    <div class="wrapper">
+        Текст который будет скопирован в буфер обмена
+    </div>
+    <p>Код JavaScript</p>
+    <img src="./img1.jpg" alt="">
+
+
+
+    <script>
+
+        const wrapper = document.querySelector('.wrapper');
+        wrapper.addEventListener('click', () => {
+            navigator.clipboard.writeText(wrapper.textContent)
+
+            wrapper.classList.add('wrapper--active');
+
+            setTimeout(() => {
+                wrapper.classList.remove('wrapper--active');
+            }, 2000)
+        })
+
+    </script>
+</body>
+</html>
