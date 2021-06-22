@@ -501,6 +501,10 @@ const teory = {
             title: 'Типы данных',
             path: './conspects/teory/TypeScript/types/index.html',
         },
+        {
+            title: 'Собственные типы данных',
+            path: './conspects/teory/TypeScript/ownTypes/index.html',
+        },
 
 ],
 
