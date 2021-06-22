@@ -129,25 +129,18 @@ const practice = {
     ],
     React: [
         {
-            title: 'Теги для работы с текстом',
-            path: './conspects/practice/html/teg_for_text/tegfortext.html',
+            title: 'Кастомный Dropdown',
+            path: './conspects/practice/react/custom_dropdown/index.html',
+        },
+        {
+            title: 'Загрузка файлов через DnD',
+            path: './conspects/practice/react/drag_and_drop/index.html',
+        },
+        {
+            title: 'SASS (SCSS)',
+            path: './conspects/practice/react/sass/index.html',
         },
      
-    ],
-  
-    Wordpress: [
-        {
-            title: 'Теги для работы с текстом',
-            path: './conspects/practice/html/teg_for_text/tegfortext.html',
-        },
-      
-    ],
-    Plugins: [
-        {
-            title: 'Теги для работы с текстом',
-            path: './conspects/practice/html/teg_for_text/tegfortext.html',
-        },
-      
     ],
     Polifils: [
         {
