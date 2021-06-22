@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Работа с TypeScript</h1>
+    <a href="https://www.npmjs.com/package/typescript" target="_blank">https://www.npmjs.com/package/typescript</a>
+    <p>Первое что нужно заметить что файлы с языков TypeScript имеют расширение не <b>.js</b>, а <b>.ts</b></p>
+    <p>Теперь что бы вообще работать с TS необходимо его установить глобально на компьютер, для этого в консоле вводим команду:</p>
+
+    <span class="code" style="cursor: pointer;" onclick="navigator.clipboard.writeText('npm install -g typescript')">npm install -g typescript</span>
+    <p>После того как TS был установлен мы сможем его использовать. Как это делается. Создадим файл <b>script.ts</b> и в него поместим вот такой код:</p>
+    <img src="./img1.jpg" alt="">
+    <p>Теперь нам нужно из файла TS скомпилировать файл JavaScript. Для этого в проекте открываем консоль и вводим вот такую команду:</p>
+    <span class="code" style="cursor: pointer;" onclick="navigator.clipboard.writeText('tsc script.ts')">tsc script.ts</span>
+    <p>После того как компилятор будет вызван в папке с проектом появится файл script.js c кодом на JavaScript</p>
+    <img src="./img2.jpg" alt="">
+
+
+</body>
+</html>
