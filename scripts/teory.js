@@ -295,7 +295,12 @@ const teory = {
 
 
     // ================================================================================ React =============================================
-    React: [{
+    React: [
+        {
+            title: 'Подключение React через CDN',
+            path: './conspects/teory/react/add_from_cdn/index.html',
+        },
+        {
             title: 'create-react-app',
             path: './conspects/teory/react/create_react_app/index.html',
         },
