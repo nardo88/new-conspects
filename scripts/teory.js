@@ -517,6 +517,11 @@ const teory = {
             title: 'Функции',
             path: './conspects/teory/TypeScript/functions/index.html',
         },
+        {
+            title: 'Классы',
+            path: './conspects/teory/TypeScript/class/index.html',
+        },
+
 
 ],
 
