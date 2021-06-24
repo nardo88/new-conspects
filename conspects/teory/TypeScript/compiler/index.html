@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Компилятор</h1>
+    <h2>Установка</h2>
+    <p>Существует два способа установки TypeScript: локально в проект и глобально на компьютер. Создадим простой проект и проинициализируем его с помощью команды:</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">npm init -y</span>
+    <p>Теперь что бы установить TypeScript компилятор локально вводим команду:</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">npm install -D typescript</span>
+    <p>После этого в файлу <b>package.json</b> появится запись в разделе <b>devDependencies</b></p>
+    <p>Так же, для того что бы пользоваться возможностями TypeScript из консоли понадобится установить TypeScript глобально, для этого в консоле вводим команду</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">npm install -g typescript</span>
+    <h2>Компиляция файлов</h2>
+    <p>Для того что бы скомпилировать файлы нашего проекта в консоле просто вводим команду:</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">tsc script.ts</span>
+    <p>где <strong>script.ts</strong> - это имя файла который нам надо скомпилировать</p>
+    <p>Но на самом деле компилятор TypeScript намного шире и более того настройками компилятора мы можем управлять.</p>
+    <h2>Настройка компилятора</h2>
+    <p>Для того что бы мы могли управлять компилятором нам надо в консоле набрать команду:</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">tsc --init</span>
+    <p>После этого в папке с проектом у нас появится файл <b>tsconfig.json</b>, где в формате JSON находятся настройки компилятора</p>
+    <p>Допустим что наши файлы со скриптами находятся в папке <b>src</b> (как у webpack) и они должны компилироваться в папку <b>build</b>. Для того что бы разделять файлы-исходники от файлов продакшена, мы в файле JSON настроек компилятора находим два свойства: <b>outDir</b> и <b>rootDir</b>? их надо раскоментировать и в качестве значения указать путь относительно файла tsconfig.json</p>
+    <img src="./img1.jpg" alt="">
+    <p>Т.е. outDir - это куда надо компилировать файлы JavaScript, а rootDir - это корневая папку откуда надо брать файлы TypeScript</p>
+    <p>Теперь что бы скомпилировать файлы (не важно сколько их) просто в консоле вводим команду</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">tsc</span>
+    <p>И компилятор сам найдет все файлы TS в папке src, скомпилирует их в JS и перенесет в папку dist </p>
+    <h3>Слушатель изменениq</h3>
+    <p>Что бы каждый раз не вводить команду при изменении файлов, можно включить watch у TS, для этого в консоле вводим команду:</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">tsc -w</span>
+    <h2>Список настроек TSC</h2>
+    <ul>
+        <li><b>target</b> - указывать в какой синтаксис надо компилировать JS файлы (по умолчанию стоит ES5, можно поменять в ES6)</li>
+        <li><b>jsx</b> - можем указать какой фреймворк мы используем и тогда TypeScript будет понимать JSX код в реакте</li>
+        <li><b>sourceMap</b> - если раскоментить это свойство и дать ему значение true то будет генерировать map файл который позволить дебажить код JS из DevTools (будем видеть читаемый код)</li>
+        <img src="./img2.jpg" alt="">
+
+        <li><b>removeComments</b> - удалит все комменты в файле JS</li>
+        <li><b></b></li>
+    </ul>
+</body> 
+</html>

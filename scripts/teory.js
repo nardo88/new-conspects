@@ -498,6 +498,10 @@ const teory = {
             path: './conspects/teory/TypeScript/install/index.html',
         },
         {
+            title: 'Компилятор',
+            path: './conspects/teory/TypeScript/compiler/index.html',
+        },
+        {
             title: 'Типы данных',
             path: './conspects/teory/TypeScript/types/index.html',
         },
