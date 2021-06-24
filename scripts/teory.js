@@ -525,6 +525,10 @@ const teory = {
             title: 'Guards',
             path: './conspects/teory/TypeScript/Guards/index.html',
         },
+        {
+            title: 'Generics',
+            path: './conspects/teory/TypeScript/Generics/index.html',
+        },
 
 
 ],
