@@ -509,6 +509,14 @@ const teory = {
             title: 'Интерфейсы',
             path: './conspects/teory/TypeScript/interfaces/index.html',
         },
+        {
+            title: 'Enums',
+            path: './conspects/teory/TypeScript/Enums/index.html',
+        },
+        {
+            title: 'Функции',
+            path: './conspects/teory/TypeScript/functions/index.html',
+        },
 
 ],
 
