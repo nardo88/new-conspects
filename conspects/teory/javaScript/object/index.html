@@ -135,6 +135,8 @@
 <h3>Второй способ</h3>
 <p>метод <b>assign</b> принимает два аргумента, 1 - целевой объект 2 - объект прототип</p>
 <img src="prim21.jpg">
+<p>Так же <b>assign</b> можно использовать для объединения двух объектов в один</p>
+<img src="prim22.jpg">
 
 <script>
 
@@ -148,6 +150,18 @@
 	let newObj = {}
 	Object.assign(newObj, obj)
 	console.log(newObj);
+
+
+
+	const obj1 = {
+		name: 'Max'
+	}
+	const obj2 = {
+		age: 32
+	}
+	const objAll = Object.assign({}, obj1, obj2)
+
+	console.log(objAll);
 
 </script>
 
