@@ -535,7 +535,7 @@ const teory = {
         },
         {
             title: 'Create ReactAPP with TS',
-            path: './conspects/teory/TypeScript/Generics/index.html',
+            path: './conspects/teory/TypeScript/Create_ReactAPP_with_TS/index.html',
         },
 
 
