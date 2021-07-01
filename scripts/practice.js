@@ -144,6 +144,10 @@ const practice = {
             title: 'SASS (SCSS)',
             path: './conspects/practice/react/sass/index.html',
         },
+        {
+            title: 'Плавный скролл',
+            path: './conspects/practice/react/smoth_scroll/index.html',
+        },
      
     ],
     Polifils: [
