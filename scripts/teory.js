@@ -289,6 +289,10 @@ const teory = {
             title: 'Полифилы',
             path: './conspects/teory/javaScript/polyfills/index.html',
         },
+        {
+            title: 'Date',
+            path: './conspects/teory/javaScript/date/index.html',
+        },
 
     ],
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Объект даты</h1>
+    <p>Создание объекта даты</p>
+    <img src="./img1.jpg" alt="">
+    <p>В качестве входного параметра классу Date можно передать год (4 цифры), месяц (номерация месяцев начинаетс я с 0)
+        и число</p>
+    <img src="./img2.jpg" alt="">
+    <p>Если передать в качестве числа месяца например - число 32 (т.е. большее количество дней у указанного месяца), то
+        Date дату переведет на следующий месяц и разница дней и будет текущим числом</p>
+    <img src="./img3.jpg" alt="">
+    <h2>Методы</h2>
+    <ul>
+        <li><b>getFullYear()</b> - Получить год (из 4 цифр)</li>
+        <li><b>getMonth()</b> - Получить месяц, от 0 до 11.</li>
+        <li><b>getDate()</b> - Получить число месяца, от 1 до 31.</li>
+        <li><b>getHours()</b> - часы</li>
+        <li><b>getMinutes()</b> - минуты</li>
+        <li><b>getSeconds()</b> - секунды</li>
+        <li><b>getMilliseconds()</b> - милисекунды</li>
+        <li><b>getDay()</b> - Получить номер дня в неделе. Неделя в JavaScript начинается с воскресенья, так что
+            результат будет числом от 0(воскресенье) до 6(суббота).</li>
+        <li><b>getTime()</b> - Возвращает число миллисекунд, прошедших с 1 января 1970 года</li>
+        <li><b>getTimezoneOffset()</b> - Возвращает разницу между местным и UTC-временем, в минутах.</li>
+    </ul>
+
+    <h2>Форматирование и вывод дат</h2>
+    <p>Это делается вызовом <b>date.toLocaleString(локаль, опции)</b>, в котором можно задать много настроек. Он
+        позволяет указать, какие параметры даты нужно вывести, и ряд настроек вывода, после чего интерпретатор сам
+        сформирует строку.</p>
+
+    <img class="cp" src="./img4.jpg" alt="" onclick="navigator.clipboard.writeText(`const options = {
+        era: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        weekday: 'long',
+        timezone: 'UTC',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+    };`)">
+    
+
+
+    <script>
+        
+        const date = new Date(2021, 6, 32) // 1 августа 2021 года
+
+        const options = {
+            era: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'long',
+            timezone: 'UTC',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric'
+        };
+
+        console.log(date.toLocaleString('ru', options));
+
+    </script>
+</body>
+
+</html>
