@@ -537,6 +537,10 @@ const teory = {
             title: 'Create ReactAPP with TS',
             path: './conspects/teory/TypeScript/Create_ReactAPP_with_TS/index.html',
         },
+        {
+            title: 'Reducer with TS',
+            path: './conspects/teory/TypeScript/reducer_ts/index.html',
+        },
 
 
 ],

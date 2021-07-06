@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Перевод в TS reducer</h1>
+    <p><span class="num">1</span> конечно же меняем расширение с JS на TS</p>
+    <p>И конечно же при попытке собрать проект мы получим кучу ошибок:</p>
+    <p>Первое на что он ругается - это то что нам надо указать тип для action</p>
+    <img src="./img1.jpg" alt="">
+    <p>Поэтому мы можем указать тип для action: any</p>
+    <img src="./img2.jpg" alt="">
+    <p>Аналогично поступаем с dispatch в thunk</p>
+    <img src="./img3.jpg" alt="">
+    <p>И вот наше приложение запустилось. Но везде проставлять тип any такое себе решение. в качестве временного оно может и пойдет. Но нам надо сделать нормальную типизацию. Начнем с объекта <b>initialState</b>. Повторю что это за объект? это то что мы передаем нашему reducer в качестве state по умолчанию. Вот как он выглядит:</p>
+    <img src="./img4.jpg" alt="">
+    <p>Теперь нам надо</p>
+</body>
+</html>
