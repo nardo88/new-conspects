@@ -653,6 +653,10 @@ const teory = {
             title: 'Создание нового компонента',
             path: './conspects/teory/meteor/create_component/index.html',
         },
+        {
+            title: 'Collections',
+            path: './conspects/teory/meteor/collections/index.html',
+        },
 
     ],
     
