@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Создание приложения</h1>
+    <h2>Устновка Meteor</h2>
+    <p>Для начала необходимо глобально установить пакеты Meteor</p>
+    <h3>Linux / Mac</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">curl https://install.meteor.com/ | sh</span>
+    <h3>Windows</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">npm install -g meteor</span>
+    <h2>Создаем Meteor проект</h2>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">meteor create simple-todos-react</span>
+    <p>simple-todos-react - название нашего проекта</p>
+    <p>Meteor создаст все необходимые файлы. Файлы, расположенные в каталоге client, настраивают клиентскую сторону (веб), например, client / main.jsx, где Meteor отображает основной компонент вашего приложения в HTML.</p>
+    <p>Кроме того, в каталоге сервера, в котором Meteor настраивает серверную часть (Node.js), можно увидеть, что server / main.js инициализирует вашу базу данных MongoDB некоторыми данными. Нам не нужно устанавливать MongoDB, поскольку Meteor предоставляет встроенную версию, готовую для использования.</p>
+    <p>Что бы запустить приложение в консоле вводим команду:</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">meteor run</span>
+    <p>C этого момента Meteor будет синхронизировать ваше приложение со всеми вашими изменениями.</p>
+    <p>код React будет находиться внутри каталога import / ui, а файл App.jsx является корневым компонентом вашего приложения React To-do.</p>
+
+</body>
+</html>

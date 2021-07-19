@@ -643,7 +643,19 @@ const teory = {
             path: './conspects/teory/woocommerce/add_styles_and_scripts/index.html',
         },
 
-    ]
+    ],
+    Meteor: [
+        {
+            title: 'Создание нового приложения',
+            path: './conspects/teory/meteor/create_app/index.html',
+        },
+        {
+            title: 'Создание нового компонента',
+            path: './conspects/teory/meteor/create_component/index.html',
+        },
+
+    ],
+    
 
 
 }
