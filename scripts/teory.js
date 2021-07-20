@@ -661,6 +661,10 @@ const teory = {
             title: 'Формы и события',
             path: './conspects/teory/meteor/forms_and_events/index.html',
         },
+        {
+            title: 'Создание пользователей',
+            path: './conspects/teory/meteor/users/index.html',
+        },
 
     ],
     
