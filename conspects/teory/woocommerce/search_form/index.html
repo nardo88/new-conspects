@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Форма поиска по сайту</h1>
+    <p>Пример формы для поиска по сайту</p>
+    <img src="./img1.jpg" alt="">
+    <p>В атрибут action добавляем php код (не забываем скобки php)<b>php esc_url( home_url( '/' ) )</b></p>
+    <p>в атрибут value input надо обязательно добавить функцию <b>get_search_query()</b> так же в атрибуте name должна
+        быть буква "s"</p>
+    <p>Теперь добавим ajax т.е. при вводе текста у нас появлялся блок со списком найденных совпадений</p>
+    <p>Скрипт с ajax на Jquery будет выглядеть вот так:</p>
+    <img src="./img2.jpg" alt="">
+    <p>Подключаем этот файл как обычно подключаем скрипты</p>
+    <img src="./img3.jpg" alt="">
+    <p>Что бы ajax у нас заработал нам необходимо рядом с подключением скрипта написать функцию
+        <b>wp_localize_script</b></p>
+    <img src="./img4.jpg" alt="">
+    <ul>
+        <li><b>ajax-search</b> - после какого скрипта мы будем загружать наш wp_localize_script</li>
+        <li><b>search_form</b> - название объекта</li>
+        <li><b>array</b> - передаем массив значений</li>
+
+    </ul>
+    <p>Теперь пишем функцию обработчика. В папке includes создаем файл <b>ajax.php</b> и в него помещаем вот такой код
+    </p>
+
+
+
+    <xmp>
+        <?php
+        if ( ! defined( 'ABSPATH' ) ) {
+            exit; // Exit if accessed directly
+        }
+
+        add_action('wp_ajax_search_action', 'esp_search_ajax_action_callback');
+        add_action('wp_ajax_nopriv_search_action', 'esp_search_ajax_action_callback');
+        function esp_search_ajax_action_callback(){
+            
+            if (!wp_verify_nonce($_POST['nonce'], 'search-nonce')){
+                wp_die('Данные отправлены с левого адреса');
+            }
+            
+            $arg = array(
+                'post_type' => array('post', 'product'),
+                'post_status' => 'publish',
+                's' => $_POST['s']
+            );
+            $query_ajax = new WP_Query($arg);
+            $json_data['out'] = ob_start(PHP_OUTPUT_HANDLER_CLEANABLE);
+            if ( $query_ajax->have_posts()) {
+                while ($query_ajax->have_posts()) {
+                    $query_ajax->the_post();
+                    ?>
+                <div class="title-searche"><?php echo get_the_title();?></div>
+                <?php
+                    }
+            }
+            $json_data['out'] .= ob_get_clean();
+            wp_send_json($json_data);
+            wp_die();
+        }
+    </xmp>
+
+    <p>Этот файл нам надо подключить в файле functions.php</p>
+
+    <img src="./img5.jpg" alt="">
+
+</body>
+</html>

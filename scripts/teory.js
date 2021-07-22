@@ -644,7 +644,11 @@ const teory = {
         },
         {
             title: 'Форма регистрации и авторизации',
-            path: './conspects/teory/woocommerce/add_styles_and_scripts/index.html',
+            path: './conspects/teory/woocommerce/auth/index.html',
+        },
+        {
+            title: 'Форма поиска на сайте',
+            path: './conspects/teory/woocommerce/search_form/index.html',
         },
 
     ],
