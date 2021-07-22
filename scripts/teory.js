@@ -650,6 +650,11 @@ const teory = {
             title: 'Форма поиска на сайте',
             path: './conspects/teory/woocommerce/search_form/index.html',
         },
+        {
+            title: 'Корзина',
+            path: './conspects/teory/woocommerce/cart/index.html',
+        },
+
 
     ],
     Meteor: [
