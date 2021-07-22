@@ -642,6 +642,10 @@ const teory = {
             title: 'Подключаем стили и скрипты',
             path: './conspects/teory/woocommerce/add_styles_and_scripts/index.html',
         },
+        {
+            title: 'Форма регистрации и авторизации',
+            path: './conspects/teory/woocommerce/add_styles_and_scripts/index.html',
+        },
 
     ],
     Meteor: [
