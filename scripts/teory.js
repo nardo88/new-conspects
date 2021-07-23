@@ -562,6 +562,14 @@ const teory = {
             title: 'Deploy на хостинг',
             path: './conspects/teory/Wordpress/deploy/index.html',
         },
+         {
+            title: 'Создание собственной темы',
+            path: './conspects/teory/Wordpress/own_theme/index.html',
+        },
+        {
+            title: 'Functions.php',
+            path: './conspects/teory/Wordpress/functions/index.html',
+        },
         {
             title: 'Главная страница',
             path: './conspects/teory/Wordpress/rewrite_main_page/index.html',

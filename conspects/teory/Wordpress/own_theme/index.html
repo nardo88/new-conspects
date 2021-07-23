@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Создание собственной темы</h1>
+    <h2>Добавление темы</h2>
+    <p>В папке <strong>wp-content / themes /</strong> создаем папку и называем ее как хотим. Далее в этой папке необходимо создать три файла:</p>
+    <ol>
+        <li>style.css</li>
+        <li>index.php</li>
+        <li>screenshot.png</li>
+    </ol>
+
+    <h3>style.css</h3>
+    <p>Файл style.css должен содержать вот такой комментарий</p>
+    <img class="cp" onclick="navigator.clipboard.writeText(`/* Theme Name: Sparrow */`)" src="./img1.jpg" alt="">
+    <h3>screenshot.png</h3>
+    <p>Screenshot.png должен иметь размер 1200*900 пикселей. он должен содержать снимок нашей темы</p>
+    <p>После добавления этих файлов в админке wordpress появится наша тема (пока что пустая)</p>
+    <h2>Файл 404.php</h2>
+    <p>Если не создавать этот файл то при переходе на несуществующие страницы мы будем попадать на главную страницу</p>
+    <h2>header footer</h2>
+    <p>В папке с темой необходимо создать еще два файла, которые будут называться <strong>header.php</strong> <strong>footer.php</strong>. В этих файлах будет храниться верстка шапки и подвала сайта</p>
+    <p>Для того что бы подключать header и footer мы будем использовать вот такое php конструкции:</p>
+    <img class="cp" onclick="navigator.clipboard.writeText(`<?php get_header(); ?>`)" src="./img2.jpg" alt="">
+    <img class="cp" onclick="navigator.clipboard.writeText(`<?php get_footer(); ?>`)" src="./img3.jpg" alt="">
+    <h2>Перенос файлов</h2>
+    <p>В папке с темой создаем папку которую называем <b>assets</b>. В эту папку мы должны перенести все файлы с картинками, шрифтами, стилями и скриптами</p>
+    <h2>Подключение файлов</h2>
+    <p>В строчках в html, где мы подключаем файлы стилей, скриптов и даже картинок, мы можем указать путь до файлов с помощью функции <b>get_template_directory_uri()</b>. Здесь важно отметить что при таком способе подключения файлов нужно не забывать что функция вернет путь до папки с темой. А значит что остальной путь нужно будет указывать от этой папки, т.е. assets / css / и т.д.</p>
+
+    <img src="./img4.jpg" alt="">
+
+    <h2>Functions.php</h2>
+    <p>Удаляем из header.php все строчки где подключаются стили и в папке с темой создаем файл <b>functions.php</b> (именной functions т.е. множественное число)</p>
+
+
+</body>
+</html>
