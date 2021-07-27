@@ -692,7 +692,7 @@ const teory = {
     MongoDB: [
         {
             title: 'Установка среды',
-            path: './conspects/teory/MongoDb/install/index.html',
+            path: './conspects/teory/mongoDb/install/index.html',
         },
      
 
