@@ -9,6 +9,12 @@
 </head>
 <body>
     <h1>Установка</h1>
-    
+    <p>Для установки MongoDB на Windows проходим по <a href="https://www.mongodb.com/try/download/enterprise" target="_blank">ссылке</a></p>
+    <img src="./img1.jpg" alt="">
+    <p>После того как скачали файл установщика просто его инсталируем без каких-либо особенностей. Далее на диске С дано создать папку "data", а вней папку "db"</p>
+    <p>После этого в консоле надо будет выполнить вот такую комманду (Эта команда запускает MongoDB database)</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">"C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe" --dbpath="c:\data\db"</span>
+    <p>Следующий шаг нам нужно подключиться к нашей БД. Так же в терминале вводим команду: (терминал открываем новый)</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">"C:\Program Files\MongoDB\Server\5.0\bin\mongo.exe"</span>
 </body>
 </html>
