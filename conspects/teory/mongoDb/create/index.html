@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Создание БД</h1>
+    <h3>Создание базы</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">use itProger</span>
+    <p>Здесь мы создали Базу данных с именем <b>itProger</b></p>
+    <h3>Создание коллекции</h3>
+    <p>Коллекция это аналоги таблицы в обыкновенной БД</p>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.createCollection('users')</span>
+    <p>Здесь мы создали коллекцию в базе с названием <b>users</b></p>
+    <h3>Удаление коллекции</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.drop()</span>
+    <h3>Добавление записи в коллекцию</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.insertOne({"name" : "Max", "email": "mail@mail.ru"})</span>
+    <p>Если данные не добавились значит мы не указали с какой БД мы работаем. Для этого вводим команду в терминале <b>use Имя_БД</b></p>
+    <p>Так же можно добавлятьсразу несколько записей, для этого мы используем метод <strong>insertMany</strong> и в качестве аргумента мы уже передаем массив объектов. Даже если объект будет один нам все равно надо будет передавать его в массиве.</p>
+    <h3>Вывести все записи коллекции</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find()</span>
+    <h3>Вывести первые 2 записи коллекции</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find().limit(2)</span>
+    <h3>Вывести записи без указания поля ID</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find({}, {_id})</span>
+    <p>Именно во втором объекте передаем те поля которые отображать не надо</p>
+    <h3>Сортировка по имени</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find().sort({name: 1})</span>
+    <p>1 - по возрастанию, -1 - по убыванию</p>
+    <h3>Фильтрация записей</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find({name: 'Max'})</span>
+    <p>Вернет записи где namу === 'Max'</p>
+    <h3>Фильтрация записей ИЛИ</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find($or: [{name: 'Max'}, {age: 33}])</span>
+    <p>Т.е. вернет записи где либо name === 'Max' либо возрас равен 33</p>
+    <h3>Фильтрация записей меньше чем...</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find({age: {$lt: 38}})</span>
+    <p>Вернутся записи где age меньше 38</p>
+    <h3>Фильтрация записей больше чем...</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.find({age: {$gt: 38}})</span>
+    <p>gte - больше либо равно, lte - меньше либо равно, eq - равно, ne - не равно</p>
+    <h3>Обновление записей</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.updateOne({age: 38}, {$set: {age: 25}})</span>
+    <p>Здесь мы нашли запись у которой age равен 38 и поменяли его на 25</p>
+    <p>Что бы изменить несколько записей мы используем updateMany</p>
+    <h3>Замена записей</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.replaceOne({age: 38}, {{age: 25, name: 'Nick', email: 'm@m.ru'}})</span>
+    <h3>Удаление записей</h3>
+    <span class="code cp" onclick="navigator.clipboard.writeText(this.textContent)">db.users.deleteOne({age: 38})</span>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

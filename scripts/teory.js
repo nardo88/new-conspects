@@ -694,6 +694,10 @@ const teory = {
             title: 'Установка среды',
             path: './conspects/teory/mongoDb/install/index.html',
         },
+        {
+            title: 'Работа с БД',
+            path: './conspects/teory/mongoDb/create/index.html',
+        },
      
 
     ],
