@@ -688,6 +688,15 @@ const teory = {
         },
 
     ],
+
+    MongoDB: [
+        {
+            title: 'Установка среды',
+            path: './conspects/teory/MongoDb/install/index.html',
+        },
+     
+
+    ],
     
 
 
