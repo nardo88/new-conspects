@@ -545,6 +545,10 @@ const teory = {
             title: 'Reducer with TS',
             path: './conspects/teory/TypeScript/reducer_ts/index.html',
         },
+        {
+            title: 'Типизация функционального компонента',
+            path: './conspects/teory/TypeScript/function_component/index.html',
+        },
 
 
 ],
