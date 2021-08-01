@@ -13,3 +13,18 @@ return (
     )
 }
 
+
+class ClassComponent extends React.Component {
+    componentDidMount() {
+        const {pages, currenpage, title} = this.props
+    }
+
+    render() {
+        return (
+            <>
+                {/* ...some JSX */}
+            </>
+        )
+    }
+}
+

@@ -549,6 +549,11 @@ const teory = {
             title: 'Типизация функционального компонента',
             path: './conspects/teory/TypeScript/function_component/index.html',
         },
+        {
+            title: 'Типизация классового компонента',
+            path: './conspects/teory/TypeScript/class_component/index.html',
+        },
+        
 
 
 ],
