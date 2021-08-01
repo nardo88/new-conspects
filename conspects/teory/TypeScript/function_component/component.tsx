@@ -14,7 +14,19 @@ return (
 }
 
 
-class ClassComponent extends React.Component {
+type PropsType = {
+    pages: number
+    currentPage: number
+    title: string
+}
+
+type StateType = {
+    users: Array<string>
+}
+
+class ClassComponent extends React.Component<PropsType, StateType> {
+
+    
     componentDidMount() {
         const {pages, currenpage, title} = this.props
     }
