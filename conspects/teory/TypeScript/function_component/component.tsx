@@ -1,42 +1,52 @@
 import React from 'react'
+import connect from 'react-redux'
+import addUserAC from 'reducer'
+import changePhoto from 'reducer'
 
-
-type PropTypes = {
-    pages: number
-    currentPage: number
-    title: string
+type UserType = {
+    id: number
+    name: string
+}
+type Profile = {
+    id: number
+    name: string
 }
 
-const Component: React.FC<PropTypes> = ({pages, currentPage, title}) => {
-return (
-        <></>
+
+const Compomemt = () => {
+    return (
+        <>
+        
+        </>
     )
 }
 
+type MapStateType = {
+    users: Array<UserType>
+    profile: Profile
+}
 
-type PropsType = {
-    pages: number
-    currentPage: number
+type MapDispatchType = {
+    changePhoto: () => void
+    addUserAC: (user: UserType) => void
+}
+
+type OwnPropsType = {
     title: string
 }
 
-type StateType = {
-    users: Array<string>
-}
+type PropsType = MapStateType & MapDispatchType & OwnPropsType
 
-class ClassComponent extends React.Component<PropsType, StateType> {
-
-    
-    componentDidMount() {
-        const {pages, currenpage, title} = this.props
-    }
-
-    render() {
-        return (
-            <>
-                {/* ...some JSX */}
-            </>
-        )
+const mapStateToProps = (state) => {
+    return {
+        users: state.users,
+        profile: state.profile
     }
 }
+
+
+const ContainerComponent = connect<PropsType>(mapStateToProps, {changePhoto, addUserAC})(Compomemt)
+
+
+
 
