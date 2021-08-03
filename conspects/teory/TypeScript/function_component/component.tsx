@@ -1,52 +1,34 @@
-import React from 'react'
-import connect from 'react-redux'
-import addUserAC from 'reducer'
-import changePhoto from 'reducer'
 
-type UserType = {
-    id: number
-    name: string
-}
-type Profile = {
-    id: number
-    name: string
+const SET_INITIALIZED = ''
+const SET_USER = 'SET_USER'
+
+
+type SetInitializedActionType = {
+    type: typeof SET_INITIALIZED
 }
 
-
-const Compomemt = () => {
-    return (
-        <>
-        
-        </>
-    )
+type SetUserActionType = {
+    type: typeof SET_USER
 }
 
-type MapStateType = {
-    users: Array<UserType>
-    profile: Profile
+type ActionType = SetInitializedActionType | SetUserActionType
+
+type InitialStateType = {
+    users: Array<string>
 }
 
-type MapDispatchType = {
-    changePhoto: () => void
-    addUserAC: (user: UserType) => void
+const initialState = {
+    users: []
 }
 
-type OwnPropsType = {
-    title: string
-}
 
-type PropsType = MapStateType & MapDispatchType & OwnPropsType
+const reducer = (state = initialState, action:ActionType): InitialStateType => {
 
-const mapStateToProps = (state) => {
-    return {
-        users: state.users,
-        profile: state.profile
+    switch (action.type) {
+        case SET_INITIALIZED:
+            return state
+        default:
+            return state
+
     }
 }
-
-
-const ContainerComponent = connect<PropsType>(mapStateToProps, {changePhoto, addUserAC})(Compomemt)
-
-
-
-
