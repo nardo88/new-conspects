@@ -553,6 +553,10 @@ const teory = {
             title: 'Типизация классового компонента',
             path: './conspects/teory/TypeScript/class_component/index.html',
         },
+        {
+            title: 'Типизация state из Redux',
+            path: './conspects/teory/TypeScript/stateType/index.html',
+        },
         
 
 
