@@ -557,6 +557,11 @@ const teory = {
             title: 'Типизация state из Redux',
             path: './conspects/teory/TypeScript/stateType/index.html',
         },
+        {
+            title: 'Типизация axios (DLL)',
+            path: './conspects/teory/TypeScript/axios/index.html',
+        },
+        
         
 
 

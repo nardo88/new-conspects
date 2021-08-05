@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Типизация axios (DLL)</h1>
+    <p><span class="num">1</span> Библиотека <b>axios</b> сама по себе уже типизирована. Что бы типизация заработало нам нужно поправить import. Он должен выглядеть вот так:</p>
+    <img src="./img1.jpg" alt="">
+
+
+
+    <p><span class="num">2</span> Пример типизации</p>
+    <p>Допустим мы создали экземпляр axios</p>
+    <img src="./img2.jpg" alt="">
+
+    <p>Далее создаем объект с методами обращения к API</p>
+    <img src="./img3.jpg" alt="">
+    <p>Здесь все просто с помощью axios мы обращаемся к урлу в ответ получаем Promise/ Через метод then мы получаем data и возвращаем его</p>
+    <p>Сначала типизируем входные параметры метода getUsers</p>
+    <img src="./img4.jpg" alt="">
+    <p>Теперь нужно типизировать response. В axios уже есть тип для response <b>AxiosResponse&lt;any&gt;</b>. Вместо any мы можем подставить свой тип. Допустим с сервера придет число. Тогда запись будет выглядеть так:</p>
+    <img src="./img5.jpg" alt="">
+    <p>Но есть и второй способ проще типизировать response. Дело в том что в axios все методы (get, post и т.д.) являются Generics. Поэтому тип возвращаемого объекта мы можем описать вот так:</p>
+    <img src="./img6.jpg" alt="">
+    <p>Если же мы опишем свой тип пришедших от сервера данных, то затем мы можем указать и его</p>
+    <img src="./img7.jpg" alt="">
+    <img src="./img8.jpg" alt="">
+
+
+
+
+</body>
+</html>
