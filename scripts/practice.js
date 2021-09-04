@@ -177,6 +177,10 @@ const practice = {
             title: 'Отправка сообщений на почту',
             path: './conspects/practice/womanup/mail_send/index.html',
         },
+        {
+            title: 'MailGun',
+            path: './conspects/practice/womanup/MailGun/index.html',
+        },
     ],
    
 
