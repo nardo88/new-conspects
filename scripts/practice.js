@@ -169,7 +169,14 @@ const practice = {
             title: 'Работа с Mongo через Shell',
             path: './conspects/practice/womanup/mongo/index.html',
         },
-      
+        {
+            title: 'Поочередность CSS стилей',
+            path: './conspects/practice/womanup/css/index.html',
+        },
+        {
+            title: 'Отправка сообщений на почту',
+            path: './conspects/practice/womanup/mail_send/index.html',
+        },
     ],
    
 
