@@ -181,6 +181,10 @@ const practice = {
             title: 'MailGun',
             path: './conspects/practice/womanup/MailGun/index.html',
         },
+        {
+            title: 'Полный админ на сайте',
+            path: './conspects/practice/womanup/full_admin/index.html',
+        },
     ],
    
 

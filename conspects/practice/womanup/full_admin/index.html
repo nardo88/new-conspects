@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Полный админ на сайте</h1>
+    <p>Что бы создать полного админа на сайте необходимо в коллекцию settings добавить следующие записи:</p>
+
+    <p><b>db.settings.insert({title: 'haveAccessToExpertDocs', name: 'haveAccessToExpertDocs', value: '4akQQHQSGsM6qCeLS'})</b></p>
+    <p><b>db.settings.insert({title: 'haveAccessToAdminBlock', name: 'haveAccessToAdminBlock', value: '4akQQHQSGsM6qCeLS'})</b></p>
+    <p><b>db.settings.insert({title: 'haveAccessToMethdistBlock', name: 'haveAccessToMethdistBlock', value: '4akQQHQSGsM6qCeLS'})</b></p>
+    <p><b>db.settings.insert({title: 'haveAccessToMarathonTableBlock', name: 'haveAccessToMarathonTableBlock', value: '4akQQHQSGsM6qCeLS'})</b></p>
+    <p><b>db.settings.insert({title: 'ProWomenStatisticUserId', name: 'ProWomenStatisticUserId', value: '4akQQHQSGsM6qCeLS'})</b></p>
+    <p><b>db.settings.insert({title: 'ModeratorUserId', name: 'ModeratorUserId', value: '4akQQHQSGsM6qCeLS'})</b></p>
+    <p><b>db.settings.insert({title: 'FireballAdminId', name: 'FireballAdminId', value: '4akQQHQSGsM6qCeLS'})</b></p>
+    <p><b>db.users.update({_id: '4akQQHQSGsM6qCeLS'}, {$set: {role: 'admin'}})</b></p>
+
+
+</body>
+</html>
