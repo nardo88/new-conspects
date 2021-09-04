@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Работа с Mongo DB через shell</h1>
+
+    <ul>
+        <li><b>meteor mongo</b> - подключение к mongo shell внутри среды разработки</li>
+        <li><b>db.users.find().pretty()</b> - получить данные из коллекции (user) в удобочитаемом виде</li>
+        <li><b>db.settings.insert({title: 'ModeratorUserId', name: 'ModeratorUserId', value: 'EkrNtd6wH'})</b> - добавляем в настройки учетную запис методиста</li>
+        <li><b>db.users.update({_id: 'EkrNtd6wH'}, {$set: {role: 'admin'}})</b> - изменение роли пользователя</li>
+    </ul>
+
+    <h2 class="btn" >Как подключаться к проду</h2>
+
+
+    <div class="hide">
+        
+    </div>
+    
+
+
+    <script>
+        const btn = document.querySelector('.btn')
+        const hide = document.querySelector('.hide')
+
+        btn.addEventListener('click', () => {
+            if(hide.innerHTML === ''){
+                hide.innerHTML = `<ul>
+                                <li><b>ssh prod@womanup.online</b></li>
+                                <li><b>mongo</b></li>
+                                <li><b>use womanup</b></li>
+                            </ul>`
+            } else {
+                hide.innerHTML = ''
+            }
+
+        })
+
+    </script>
+</body>
+</html>

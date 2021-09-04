@@ -164,6 +164,13 @@ const practice = {
         },
       
     ],
+    WomanUP: [
+        {
+            title: 'Работа с Mongo через Shell',
+            path: './conspects/practice/womanup/mongo/index.html',
+        },
+      
+    ],
    
 
 
