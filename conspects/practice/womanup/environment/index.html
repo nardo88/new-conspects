@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h2>Разворачивание среды разработки</h2>
+    <ol>
+        <li><b>Linux</b> - Разворачиваем linux server на виртуально ймашине (Hyper-V). Git скорее всего будет стоять по дефолту, поэтому ставим только npm</li>
+        <li><b>SSH</b> - генерируем ssh ключи на linux, что бы появилась папка home/nardo/.ssh после этого заменяем ключи на те, что добавлены на проде и зарегистрированы на GitLab</li>
+        <li><b>Repository</b> - создаем папку womanup и клонируем в нее репозиторий с GitLAb</li>
+        <li><b>Meteor</b> - устанавливаем на linux meteor - <b style="cursor: pointer;" onclick="navigator.clipboard.writeText(`curl https:\/\/install.meteor.com/ | sh`)">curl https://install.meteor.com/ | sh</b> </li>
+        <li><b>Remote SSH</b> - теперь все что нам остается - это через плагин <strong>Remote-SHH</strong>установить подключение:</li>
+
+        <ol>
+            <li> <img src="./img1.jpg" alt=""> </li>
+            <li> <img src="./img2.jpg" alt=""> </li>
+            <li> <img src="./img3.jpg" alt=""> </li>
+            <li> <img src="./img4.jpg" alt=""> </li>
+           
+        </ol>
+
+        <li>Вводим npm i после чего в скриптах packege.json выбираем dev. Ждем когда установятся зависимости. Первая установка очень долгая.</li>
+    </ol>
+</body>
+</html>
