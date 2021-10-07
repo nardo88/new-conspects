@@ -719,6 +719,16 @@ const teory = {
      
 
     ],
+
+    NextJS: [
+        {
+            title: 'Установка среды',
+            path: './conspects/teory/nextjs/install/index.html',
+        },
+        
+     
+
+    ],
     
 
 
