@@ -166,6 +166,10 @@ const practice = {
     ],
     WomanUP: [
         {
+            title: 'Разворачивание среды разработки',
+            path: './conspects/practice/womanup/environment/index.html',
+        },
+        {
             title: 'Работа с Mongo через Shell',
             path: './conspects/practice/womanup/mongo/index.html',
         },
@@ -185,6 +189,7 @@ const practice = {
             title: 'Полный админ на сайте',
             path: './conspects/practice/womanup/full_admin/index.html',
         },
+        
     ],
    
 
