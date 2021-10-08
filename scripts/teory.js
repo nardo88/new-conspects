@@ -725,6 +725,10 @@ const teory = {
             title: 'Установка среды',
             path: './conspects/teory/nextjs/install/index.html',
         },
+        {
+            title: 'Routing',
+            path: './conspects/teory/nextjs/routing/index.html',
+        },
         
      
 
