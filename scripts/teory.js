@@ -741,6 +741,10 @@ const teory = {
             title: 'Document',
             path: './conspects/teory/nextjs/document/index.html',
         },
+        {
+            title: 'Стили',
+            path: './conspects/teory/nextjs/styles/index.html',
+        },
         
      
 
