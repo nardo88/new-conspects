@@ -749,6 +749,10 @@ const teory = {
             title: 'страница 404',
             path: './conspects/teory/nextjs/404/index.html',
         },
+        {
+            title: 'getInitialProps',
+            path: './conspects/teory/nextjs/getInitialProps/index.html',
+        },
         
      
 
