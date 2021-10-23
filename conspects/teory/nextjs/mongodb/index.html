@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Создание проекта с MongoDB</h1>
+
+    <h2>Создание проекта с помощью npx</h2>
+    <p>Для создания проекта в консоле вводим команду:</p>
+    <span class="code">npx create-next-app --example with-mongodb mflix</span>
+    <p>Где mflix - это название проекта. Здесь можно вместо mflix указать точку и тогда система не создаст папку с проектом и закачает проект в текущую папку откуда был запущена команда npx</p>
+    <h2>Настройки</h2>
+    <p>После того как проект был создан, первое что нам нужно сделать это найти в корне проекта файл <b>.env.local.example</b> и переименовать его в <b>.env.local</b></p>
+    <p>Далее в этот файл нужно добавить две строчки:</p>
+    <ul>
+        <li>MONGODB_URI=</li>
+        <li>MONGODB_DB=</li>
+    </ul>
+    <p>MONGODB_URI - это путь до нашего кластера в Atlas MongoDB. Здесь важно то, что в качестве пароля необходимо указать пароль пользователя который мы указале в настройках атласа MongoDB</p>
+    <img src="./img1.jpg" alt="">
+    <p>Для MONGODB_DB просто указываем имя БД которое будет создано в атласе</p>
+    <img src="./img2.jpg" alt="">
+    <p>После этих манипуляций можно запускать проект и он запустится без ошибок</p>
+    <h2>Создание API для обращения к БД</h2>
+    <p>В папке pages создаем папку api. Внутри создаем файл movies.js</p>
+</body>
+</html>

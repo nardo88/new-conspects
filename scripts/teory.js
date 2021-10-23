@@ -753,6 +753,10 @@ const teory = {
             title: 'getInitialProps',
             path: './conspects/teory/nextjs/getInitialProps/index.html',
         },
+        {
+            title: 'MongoDB',
+            path: './conspects/teory/nextjs/mongodb/index.html',
+        },
         
      
 
