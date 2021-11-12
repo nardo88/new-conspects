@@ -189,6 +189,10 @@ const practice = {
             title: 'Полный админ на сайте',
             path: './conspects/practice/womanup/full_admin/index.html',
         },
+        {
+            title: 'Тестирование на stage',
+            path: './conspects/practice/womanup/stage/index.html',
+        },
         
     ],
    

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Тестирование на staeg</h1>
+    <p><span class="num">1</span> Подключаемся по SSH к серву stage (ip 159.69.88.50)</p>
+    <p><span class="num">2</span> в терминале вводим <b>screen -ls</b> для того чтобы увидеть статус скрина.</p>
+    <img src="./img1.jpg" alt="">
+    <p>Важно то, что статус скрина - (Detached), это значит что к скрину никто не присоединен.</p>
+    <p>Что бы подключиться к скрину вводим команду <b>screen -r dev</b></p>
+    <p><span class="num">3</span> если серв упал в скрине жмем клавишу вверх и ищем команду <strong>FIREBALL_DATA_DIR...</strong> после чего вводим команду <b>npm run dev</b> </p>
+</body>
+</html>
