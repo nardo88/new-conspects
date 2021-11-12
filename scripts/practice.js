@@ -193,6 +193,10 @@ const practice = {
             title: 'Тестирование на stage',
             path: './conspects/practice/womanup/stage/index.html',
         },
+        {
+            title: 'Обновление prod',
+            path: './conspects/practice/womanup/prod/index.html',
+        },
         
     ],
    

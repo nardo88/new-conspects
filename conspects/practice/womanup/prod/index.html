@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Обновление prod</h1>
+    <p><span class="num">1</span> Если локалка запущена, останавливаем ее и переключаемся на master</p>
+    <p>Из под master выполняем:</p>
+    <p><b>git stash</b></p>
+    <p><b>git stash clear</b></p>
+    <p><b>git pull</b></p>
+    <p><span class="num">2</span> Через powershell подключаемся на prod и вводим в терминале <b>pm2 log</b>. Откроется последние 15 логов, при деплое будем здесь отслеживать ошибки</p>
+    <p><span class="num">3</span> Возвращаемся в IDE и в консоле вводим <b>pm2 deploy production</b>. После выполнения команды смотрим логи в powershell.</p>
+    <p>Если pm2 не найдено устанавливаем с помощью npm</p>
+    <span class="code">npm i pm2 -g</span>
+    <p>Если все сломалось есть команда для возврата к предыдущему состоянию prod</p>
+    <span class="code">pm2 deploy production revert</span>
+</body>
+</html>
