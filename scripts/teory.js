@@ -757,9 +757,6 @@ const teory = {
             title: 'MongoDB',
             path: './conspects/teory/nextjs/mongodb/index.html',
         },
-        
-     
-
     ],
     
 
