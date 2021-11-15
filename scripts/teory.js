@@ -758,6 +758,10 @@ const teory = {
             path: './conspects/teory/nextjs/getStaticProps/index.html',
         },
         {
+            title: 'getServerSideProps',
+            path: './conspects/teory/nextjs/getServerSideProps/index.html',
+        },
+        {
             title: 'MongoDB',
             path: './conspects/teory/nextjs/mongodb/index.html',
         },
