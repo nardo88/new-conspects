@@ -766,6 +766,14 @@ const teory = {
             path: './conspects/teory/nextjs/mongodb/index.html',
         },
     ],
+    NodeJS: [
+        {
+            title: 'Модули',
+            path: './conspects/teory/nodejs/modules/index.html',
+        },
+       
+       
+    ],
     
 
 
