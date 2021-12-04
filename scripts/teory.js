@@ -771,6 +771,10 @@ const teory = {
             title: 'Модули',
             path: './conspects/teory/nodejs/modules/index.html',
         },
+        {
+            title: 'Взаимодействие с ОС',
+            path: './conspects/teory/nodejs/os/index.html',
+        },
        
        
     ],
