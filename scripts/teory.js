@@ -775,6 +775,10 @@ const teory = {
             title: 'Взаимодействие с ОС',
             path: './conspects/teory/nodejs/os/index.html',
         },
+        {
+            title: 'Создание Rest API',
+            path: './conspects/teory/nodejs/restApi/index.html',
+        },
        
        
     ],

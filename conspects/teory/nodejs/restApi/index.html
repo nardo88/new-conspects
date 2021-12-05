@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Создание REST API</h1>
+    <h2>Инициализация</h2>
+    <p>Для разработки мы будем использовать:</p>
+    <ul>
+        <li>Node.JS</li>
+        <li>Postman</li>
+        <li>Express</li>
+        <li>nodemon</li>
+    </ul>
+    <p><span class="num">1</span> Инициализируем проект</p>
+    <span class="code">npm init -y</span>
+    <p><span class="num">2</span> устанавливаем express</p>
+    <span class="code">npm i express</span>
+    <p>После того как установили express в Package.JSON в разделе скриптов вводим вот такую команду:</p>
+    <img src="./img1.jpg" alt="">
+    <p>Теперь что бы использовать импорты и экспорты ES6 в Package.JSON добавляем вот такую запись:</p>
+    <img src="./img2.jpg" alt="">
+    <p><span class="num">3</span> Открываем наш исходный файл и в нем импортируем express</p>
+    <img src="./img3.jpg" alt="">
+    <p>Что бы запустить сервер пишем код:</p>
+    <img src="./img4.jpg" alt="">
+    <p>Что бы запустить сервер в консоле вводим npm start. Метод listen принимает два параметра. 1 - порт на котором будет запущен сервер, 2 - callback который будет вызван в случае успешногозапуска сервера. Теперь если открыть браузер и в адресе указать localhost:5000 то мы увидим надпись "Cannot GET /" т.е. сервер стартанул, но мы пока ничего не возвращаем на GET запрос</p>
+    <h2>Создаем дефолтный endpoint</h2>
+    <p>Перед слушателем обращаемся к нашему экземпляру exprerss и вызывыаем метод get. Этот метод принимает два аргумента, первый это endpoint (мы указываем простой слеш) и второй - это callback который принимает два пара метра: 1 - reques, 2 - response. У response dspsdftv метод status n передаем туда 200 (success) после чего вызываем метод json и передаем тело ответа. пока передадим строку</p>
+    <img src="./img5.jpg" alt="">
+    <p>Если сейчас обновить страницу в браузере, то мы не увидим изменений. Нам нужно перезапустить сервер. Что бы при каждом изменении не перезапускать сервер будем использовать библиотеку - <b>nodemon</b></p>
+    <span class="code">npm i -D nodemon</span>
+    <p>После того как пакет установился в Pachage.JSON добавляем новый скрипт</p>
+    <img src="./img6.jpg" alt="">
+    <p>Теперь при запуске npm run dev запустится сервер который будем сам перезапускаться при каждом изменении в index.js</p>
+    <p>В req нам могут быть доступны заголовки, query параметры или же body в случаем POST запроса (в этом случае надо будет использовать метод post у экземпляра express)</p>
+    <img src="./img7.jpg" alt="">
+    <p>Сейчас если в postman мы выполним POST запрос и передадим тело, то в консоле мы увидим undefined.Это потому что по умолчанию express не может преобразовать JSON, что бы исправить ситуация необходимо </p>
+    <img src="./img8.jpg" alt="">
+    <p>После этого body нормально отображается</p>
+
+
+</body>
+</html>
