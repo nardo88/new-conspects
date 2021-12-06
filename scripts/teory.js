@@ -779,6 +779,10 @@ const teory = {
             title: 'Создание Rest API',
             path: './conspects/teory/nodejs/restApi/index.html',
         },
+        {
+            title: 'Подключение к БД',
+            path: './conspects/teory/nodejs/connectToDb/index.html',
+        },
        
        
     ],

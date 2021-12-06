@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Подключение к БД</h1>
+    <h2>Создание проекта на MongoDB</h2>
+    <p>Заходим на сайт <a href="https://cloud.mongodb.com/v2/6173c367e290425088469dcb#clusters">mongoDb</a> авторизовываемся и создаем новый проект:</p>
+    <img src="./img1.jpg" alt="">
+    <p>Указываем имя проекта, жмем <strong>next</strong> после чего жмем <strong>Create Project</strong> и наконец жмем <strong>Build a DataBase</strong>. Откроется окно где нужно выбрать тариф, выбираем free</p>
+    <img src="./img2.jpg" alt="">
+    <p>На следующем этапе выбираем расположение и жмем Create Cluster</p>
+    <p>Создание кластера может занять некоторое время</p>
+    <img src="./img3.jpg" alt="">
+    <p>Что бы не ждать просто так указываем логин и пароль пользователя который будет иметь доступ к БД</p>
+    <img src="./img4.jpg" alt="">
+    <p>Жмем create user. Теперь нам надо настроить IP адреса, делается это на вкладке <strong>Network Access</strong>. Жмем Add IP adres</p>
+    <p>В открывшемся окне жмем <strong>Allow Access from Anywhere</strong> (при необходимости можно настроить доступ) Жмем confirm</p>
+    <p>После того как кластер создан переходим на вкладку <strong>DATABASES</strong> и жмем кнопку <strong>Connect</strong></p>
+    <img src="./img5.jpg" alt="">
+    <p>В открывшемся окне выбираем <strong>Connect your application</strong> и копируем URL до нашего кластера</p>
+    <img src="./img6.jpg" alt="">
+    <h2>Подключение</h2>
+    <p>В нашем проекте создаем переменную куда сохраняем ссылку до кластера</p>
+    <img src="./img6.1.jpg" alt="">
+    <p>Что бы работать с БД нам необходимо установить пакет mongoose</p>
+    <span class="code">npm i mongoose</span>
+    <p>Импортируем mongoose</p>
+    <img src="./img7.jpg" alt="">
+    <p>Далее создадим ассинхронную функцию</p>
+    <img src="./img8.jpg" alt="">
+
+
+
+</body>
+</html>
