@@ -783,6 +783,10 @@ const teory = {
             title: 'Подключение к БД',
             path: './conspects/teory/nodejs/connectToDb/index.html',
         },
+        {
+            title: 'Запись данных в БД',
+            path: './conspects/teory/nodejs/addDataToBd/index.html',
+        },
        
        
     ],
