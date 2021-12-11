@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Маршрутизация endpoint-ов</h1>
+    <p>Хранить эндроинты в главном JS файле плохая практика, поэтому вынесем их в отдельный файл</p>
+    <p>Первое что нужно сделать это импортировать класс Router из express и создать экземпляр этого класса</p>
+    <img src="./img1.jpg" alt="">
+    <p>Далее использую экземпляр класса создаем все варианты обращения к эндпоинту</p>
+    <img src="./img2.jpg" alt="">
+    <p>Не забываем экспортировать экземпляр класса по default</p>
+    <p>Методы запросов у Router принимают первым аргументом endpoint (т.е. по какому адресу будет доступен), вторым аргументом передается callback который получит два аргумента request и response. Callback должен быть ассинхронным. По сути это та же функция с помощью которой мы добавляли запись в предыдущем разделе.</p>
+    <img src="./img3.jpg" alt="">
+    <p>Возвращаемся в index.js. Эндроинт в котором мы обращались к постам можно удалить. Затем импортируем только что созданный router (расширение js обязательно)</p>
+    <img src="./img4.jpg" alt="">
+    <p>Теперь регистрируем наш роутер с помощью метода app.use</p>
+    <img src="./img5.jpg" alt="">
+    <img src="./img6.jpg" alt="">
+
+
+
+
+
+
+
+</body>
+</html>

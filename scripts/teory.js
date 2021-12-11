@@ -787,6 +787,10 @@ const teory = {
             title: 'Запись данных в БД',
             path: './conspects/teory/nodejs/addDataToBd/index.html',
         },
+        {
+            title: 'Маршрутизация',
+            path: './conspects/teory/nodejs/router/index.html',
+        },
        
        
     ],
