@@ -791,6 +791,10 @@ const teory = {
             title: 'Маршрутизация',
             path: './conspects/teory/nodejs/router/index.html',
         },
+        {
+            title: 'Controllers',
+            path: './conspects/teory/nodejs/controllers/index.html',
+        },
        
        
     ],
