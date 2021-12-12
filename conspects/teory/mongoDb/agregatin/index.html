@@ -25,18 +25,68 @@
     <img src="./img5.jpg" alt="">
     <p>Третий способ преобразования поля - преобразования с помощью встроенных функций</p>
     <ul>
-        <li><b></b></li>
-        <li><b></b></li>
-        <li><b></b></li>
-        <li><b></b></li>
-        <li><b></b></li>
-        <li><b></b></li>
-        <li><b></b></li>
+        <li>
+            <b>для чисел</b>
+            <p>В качестве значений могут быть как константы, так и значения полей документа</p>
+            <p>
+                <strong>$add</strong> - <span>сложение </span> 
+                <img src="./img6.jpg" alt="">
+            </p>
+            <p>
+                <strong>$subtract</strong> - <span>вычитание </span> 
+                <img src="./img7.jpg" alt="">
+            </p>
+            <p>
+                <strong>$multiply</strong> - <span>умножение </span> 
+                <img src="./img7.jpg" alt="">
+            </p>
+            <p>
+                <strong>$divide</strong> - <span>результат деления </span> 
+                <img src="./img8.jpg" alt="">
+            </p>
+            <p>
+                <strong>$mod</strong> - <span>возвращает остаток от деления </span> 
+                <img src="./img9.jpg" alt="">
+            </p>
+
+        </li>
+        <li>
+            <b>для строк</b>
+            <p>
+                <strong>$concat</strong> - <span>объединение строк </span> 
+                <img src="./img10.jpg" alt="">
+            </p>
+            <p>
+                <strong>$toLower</strong> - <span>приводит строку к нижнему регистру </span> 
+            </p>
+            <p>
+                <strong>$toUpper</strong> - <span>приводит строку к верхнему регистру </span> 
+            </p>
+        </li>
+        <li>
+            <b>для булевых значений</b>
+            <p>
+                <strong>$and</strong> - <span>получаем массив булевых значений и вернет true если все равны true</span> 
+                <img src="./img10.jpg" alt="">
+            </p>
+            <p>
+                <strong>$or</strong> - <span>вернет true если хотя бы один элемент переданного массива равен true</span> 
+            </p>
+            <p>
+                <strong>$not</strong> - <span>получает массив с blybv булевым значением и вернет true если это значение равно false</span> 
+            </p>
+        </li>
+        <li><b>Для множеств</b> 
+            <img src="./img11.jpg" alt="">
+        </li>
     </ul>
     <h4></h4>
 
     <h3>$group</h3>
     <p>Группирует документы в соответствии с выражением</p>
+    <p>В двух словах группировка, это когда мы объединяем документы в одну сущность по единому критерию (например у всех записей одна и та же дата) и по этой группе можем вывести максимальное или минимальное значение какого-то поля (например температура по цельсию)</p>
+    <img src="./img12.jpg" alt="">
+    <img src="./img13.jpg" alt="">
     <h3>$unwind</h3>
     <p>Преобразует поле с типом массива в несколько документов</p>
     <h3>$sort $limit $skip</h3>
