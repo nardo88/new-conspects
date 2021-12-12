@@ -795,6 +795,10 @@ const teory = {
             title: 'Controllers',
             path: './conspects/teory/nodejs/controllers/index.html',
         },
+        {
+            title: 'Pagination',
+            path: './conspects/teory/nodejs/pagination/index.html',
+        },
        
        
     ],
