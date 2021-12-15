@@ -716,6 +716,14 @@ const teory = {
             title: 'Работа с БД',
             path: './conspects/teory/mongoDb/create/index.html',
         },
+        {
+            title: 'Atlas',
+            path: './conspects/teory/mongoDb/atlas/index.html',
+        },
+        {
+            title: 'Агрегация',
+            path: './conspects/teory/mongoDb/agregatin/index.html',
+        },
      
 
     ],
