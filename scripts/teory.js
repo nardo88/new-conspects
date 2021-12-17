@@ -811,6 +811,10 @@ const teory = {
             title: 'Real Time Client-Server (long-pulling)',
             path: './conspects/teory/nodejs/longPulling/index.html',
         },
+        {
+            title: 'Real Time Client-Server (event soursing)',
+            path: './conspects/teory/nodejs/eventSoursing/index.html',
+        },
        
        
     ],
