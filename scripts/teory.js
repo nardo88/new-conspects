@@ -815,6 +815,10 @@ const teory = {
             title: 'Real Time Client-Server (event soursing)',
             path: './conspects/teory/nodejs/eventSoursing/index.html',
         },
+        {
+            title: 'Real Time Client-Server (WebSocket)',
+            path: './conspects/teory/nodejs/WebSocket/index.html',
+        },
        
        
     ],
