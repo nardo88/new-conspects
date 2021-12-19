@@ -299,8 +299,7 @@ const teory = {
 
 
     // ================================================================================ React =============================================
-    React: [
-        {
+    React: [{
             title: 'Подключение React через CDN',
             path: './conspects/teory/react/add_from_cdn/index.html',
         },
@@ -488,16 +487,9 @@ const teory = {
             title: 'propTypes',
             path: './conspects/teory/react/propTypes/index.html',
         },
-
-
-
     ],
 
-
-
-    // ================================================================================ TypeScript =============================================
-    TypeScript: [
-        {
+    TypeScript: [{
             title: 'Инсталяция',
             path: './conspects/teory/TypeScript/install/index.html',
         },
@@ -561,17 +553,11 @@ const teory = {
             title: 'Типизация axios (DLL)',
             path: './conspects/teory/TypeScript/axios/index.html',
         },
-        
-        
-
-
-],
 
 
 
-    // ================================================================================ Wordpress =============================================
 
-
+    ],
     Wordpress: [{
             title: 'Установка на OpenServer',
             path: './conspects/teory/Wordpress/ustanovka/index.html',
@@ -580,7 +566,7 @@ const teory = {
             title: 'Deploy на хостинг',
             path: './conspects/teory/Wordpress/deploy/index.html',
         },
-         {
+        {
             title: 'Создание собственной темы',
             path: './conspects/teory/Wordpress/own_theme/index.html',
         },
@@ -630,8 +616,7 @@ const teory = {
         },
 
     ],
-    FireBase: [
-        {
+    FireBase: [{
             title: 'Инициализация и deploy react приложения на хостинг FireBase',
             path: './conspects/teory/Firebase/init/index.html',
         },
@@ -655,8 +640,7 @@ const teory = {
         },
 
     ],
-    Woocommerce: [
-        {
+    Woocommerce: [{
             title: 'Установка Woocommerce',
             path: './conspects/teory/woocommerce/install/index.html',
         },
@@ -683,8 +667,7 @@ const teory = {
 
 
     ],
-    Meteor: [
-        {
+    Meteor: [{
             title: 'Создание нового приложения',
             path: './conspects/teory/meteor/create_app/index.html',
         },
@@ -707,8 +690,7 @@ const teory = {
 
     ],
 
-    MongoDB: [
-        {
+    MongoDB: [{
             title: 'Установка среды',
             path: './conspects/teory/mongoDb/install/index.html',
         },
@@ -724,12 +706,11 @@ const teory = {
             title: 'Агрегация',
             path: './conspects/teory/mongoDb/agregatin/index.html',
         },
-     
+
 
     ],
 
-    NextJS: [
-        {
+    NextJS: [{
             title: 'Установка среды',
             path: './conspects/teory/nextjs/install/index.html',
         },
@@ -774,8 +755,7 @@ const teory = {
             path: './conspects/teory/nextjs/mongodb/index.html',
         },
     ],
-    NodeJS: [
-        {
+    NodeJS: [{
             title: 'Модули',
             path: './conspects/teory/nodejs/modules/index.html',
         },
@@ -819,10 +799,10 @@ const teory = {
             title: 'Real Time Client-Server (WebSocket)',
             path: './conspects/teory/nodejs/WebSocket/index.html',
         },
-       
-       
+
+
     ],
-    
+
 
 
 }
