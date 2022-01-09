@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<style>
+    .link{
+        text-decoration: none;
+        color: #3f3f3f;
+    }
+    .link:hover{
+        color: #fff;
+        background: #3f3f3f;
+    }
+</style>
+<body>
+    <h1>Простая авторизация</h1>
+    <p><a href="https://github.com/nardo88/simple_auth" class="link" target="_blank">Ссылка</a> до репозитория</p>
+    <h2>Используемые пакеты</h2>
+    <ul>
+        <li><b>express</b> - позволяет поднять web сервер для нашего проекта</li>
+        <li><b>mongoose</b> - библиотека для обращения к БД MongoDB</li>
+        <li><b>nodemon</b> - библиотека для разработки, позволяет автоматически перезапускать проект при изменении файлов</li>
+        <li><b></b></li>
+        <li><b></b></li>
+        <li><b></b></li>
+    </ul>
+    <h2>Создаем атлас mongo</h2>
+    <p>Как создавать атлас для mongoDb можно посмотреть в <strong>TEORY</strong> - <strong>MONGODB</strong> - <strong>Atlas</strong></p>
+    <p>В двух словах: создаем кластер, указываем пользователя для авторизации с правами читать и писать в бд (лог - admin, пар - admin). Далее указываем с какого ip можно запрашивать данные из БД, выбираем any ip 0.0.0.0/0</p>
+    <h2>Инициаализация проекта</h2>
+    <p>В консоле вводим:</p>
+    <span class="code">npm init -y</span>
+    <p>После чего в проекте появится файл package.json</p>
+    <p>Далее устанавливаем пакеты</p>
+    <span class="code">npm i express mongoose nodemon</span>
+    <p>В корне проекта создаем файл <b>index.js</b> - это будет точкой входа в наше приложение. Так же в package.json не забываем прописать скрипт <b>nodemon index.js</b></p>
+    <img src="./img1.jpg" alt="">
+    <h2>Базовая структура веб сервера</h2>
+    <img src="./img2.jpg" alt="">
+    <h2>Установка соединения с БД</h2>
+    <p>Для этого открываем создавшийся атлас и выбираем раздел <strong>Connect</strong></p>
+    <img src="./img3.jpg" alt="">
+    <p>В открывшемся окне выбираем <strong>Connect your Application</strong> и копируем адрес до кластера</p>
+    <img src="./img4.jpg" alt="">
+    <p>Импортируем в index.js библиотеку mongoose</p>
+    <img src="./img5.jpg" alt="">
+    <p>Теперь у mongoose необходимо вызвать метод connect. Это ассинхронный метод поэтому делаем нашу функцию старта сервера ассинхронной</p>
+    <img src="./img6.jpg" alt="">
+    <p>Так же наш сервер должен уметь парсить JSON, для этого обращаемся к app и вызываем метод use</p>
+    <img src="./img7.jpg" alt="">
+    <h2>Определяем маршруты API</h2>
+    <p>Создаем файл authRouter.js в котором пропишем маршруты</p>
+    <img src="./img8.jpg" alt="">
+    <p>Возвращаемся в index.js и импортируем только что созданный router</p>
+    <img src="./img9.jpg" alt="">
+    <p>Указываем нашему серверу что бы он этот роутер прослушивал</p>
+    <img src="./img10.jpg" alt="">
+    <h2>Создаем контроллер</h2>
+    <p>В корне проекта создаем файл authController.js в котором будем описывать всю логику взаимодействия с маршрутами</p>
+    <img src="./img11.jpg" alt="">
+    <p>По факту - это обыкновенный класс у которого будут методы регистрации, авторизации и получения всех пользователей.</p>
+    <p>Теперь возвращаемся к нашему router и сюда импортируем только что созданный объект</p>
+    <img src="./img12.jpg" alt="">
+    <p>Теперь на каждом маршруте указываем какой метод должен быть выйзван</p>
+    <img src="./img13.jpg" alt="">
+    <p>Для проверки в методе getUsers добавим строчку <b>res.json('server works')</b></p>
+    <p>На этом этапе если в <strong>Postman</strong> сделать get запрос до адреса <strong>http://localhost:5000/auth/users</strong> то в ответе мы получим</p>
+    <img src="./img14.jpg" alt="">
+    <h2>Создание схемы данным в БД</h2>
+    <p>В корне проекта создаем папку <strong>models</strong>, внутри этой папки создаем два файла <strong>user.js</strong> и <strong>role.js</strong>. Первый будет описывать схему данных пользователя, второй просто будет содержать возможные роли пользователя. У нас для примера будет две роли - USER и ADMIN.</p>
+    <p>Импортируем Schema и model из пакета mongoose. Далее описываем схему данных пользователя:</p>
+    <img src="./img15.jpg" alt="">
+    <p>Вот так будет выглядеть схема ролей</p>
+    <img src="./img16.jpg" alt="">
+
+
+
+
+</body>
+</html>

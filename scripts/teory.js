@@ -799,6 +799,10 @@ const teory = {
             title: 'Real Time Client-Server (WebSocket)',
             path: './conspects/teory/nodejs/WebSocket/index.html',
         },
+        {
+            title: 'Простая авторизация',
+            path: './conspects/teory/nodejs/simpleAuth/index.html',
+        },
 
 
     ],
