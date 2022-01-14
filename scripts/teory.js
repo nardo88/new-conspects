@@ -202,6 +202,10 @@ const teory = {
             path: './conspects/teory/javaScript/functions/index.html',
         },
         {
+            title: 'Генераторы, итераторы',
+            path: './conspects/teory/javaScript/generation/index.html',
+        },
+        {
             title: 'Работа с DOM',
             path: './conspects/teory/javaScript/dom/index.html',
         },
