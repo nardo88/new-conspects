@@ -148,6 +148,10 @@ const practice = {
             title: 'Плавный скролл',
             path: './conspects/practice/react/smoth_scroll/index.html',
         },
+        {
+            title: 'useDebounce',
+            path: './conspects/practice/react/useDebounce/index.html',
+        },
      
     ],
     Polifils: [

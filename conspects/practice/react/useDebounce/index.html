@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>useDebounce</h1>
+    <p>Паттерн <b>debounce</b> предполагает что мы не будем отправлять на сервер запрос при каждом вводе символа строки. Запрос будет отправлен только после того как мы остановимся на 400 милисекунд</p>
+    <p>ссылка на <a href="https://github.com/nardo88/useDebounce" target="_blank">репозиторий</a></p>
+    <h3>Результат</h3>
+    <img src="./gif1.gif" alt="">
+    <h3>Написание самой функции</h3>
+    <img src="./img1.jpg" alt="">
+    <p>Здесь функция совершенно не отличается от версии на JavaScript. Разница лишь в том, что мы здесь используем куа ссылку. Куа работает так что она хранит данные которые не вызывают перерендер и не обнуляются при изменении state, который вызывает перерендер. Если создавать переменную timeOut через let, то при перерендере переменная будет пересоздаваться и нужный эффект прерывания не произойдет.</p>
+    <h3>Функция имитации получения данных с сервера</h3>
+    <img src="./img2.jpg" alt="">
+    <h3>Использование useDebounce</h3>
+    <img src="./img3.jpg" alt="">
+
+</body>
+</html>
