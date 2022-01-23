@@ -412,10 +412,6 @@ const teory = {
             path: './conspects/teory/react/local_state/index.html',
         },
         {
-            title: 'Redux-form',
-            path: './conspects/teory/react/redux_form/index.html',
-        },
-        {
             title: 'LogIn LogOut',
             path: './conspects/teory/react/login_logout/index.html',
         },
@@ -493,6 +489,10 @@ const teory = {
         {
             title: 'Redux-Thunk',
             path: './conspects/teory/redux/redux-thunk/index.html',
+        },
+        {
+            title: 'Redux-form',
+            path: './conspects/teory/redux/redux-form/index.html',
         },
     ],
 
