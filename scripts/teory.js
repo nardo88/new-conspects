@@ -368,10 +368,6 @@ const teory = {
             path: './conspects/teory/react/reduser/index.html',
         },
         {
-            title: 'Redux',
-            path: './conspects/teory/react/redux/index.html',
-        },
-        {
             title: 'Контейнерные компоненты',
             path: './conspects/teory/react/container/index.html',
         },
@@ -490,6 +486,17 @@ const teory = {
         {
             title: 'propTypes',
             path: './conspects/teory/react/propTypes/index.html',
+        },
+    ],
+
+    Redux: [
+        {
+            title: 'Создание',
+            path: './conspects/teory/redux/create/index.html',
+        },
+        {
+            title: 'Reducer',
+            path: './conspects/teory/redux/reducer/index.html',
         },
     ],
 
