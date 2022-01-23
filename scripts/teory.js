@@ -360,24 +360,12 @@ const teory = {
             path: './conspects/teory/react/oop/index.html',
         },
         {
-            title: 'Dispatch',
-            path: './conspects/teory/react/dispatch/index.html',
-        },
-        {
-            title: 'Reducer',
-            path: './conspects/teory/react/reduser/index.html',
-        },
-        {
             title: 'Контейнерные компоненты',
             path: './conspects/teory/react/container/index.html',
         },
         {
             title: 'Context API',
             path: './conspects/teory/react/context/index.html',
-        },
-        {
-            title: 'React-Redux',
-            path: './conspects/teory/react/react-redux/index.html',
         },
         {
             title: 'Rest API',
@@ -406,10 +394,6 @@ const teory = {
         {
             title: 'DAL (уровень доступа к данным)',
             path: './conspects/teory/react/dal/index.html',
-        },
-        {
-            title: 'Redux-Thunk',
-            path: './conspects/teory/react/thunk/index.html',
         },
         {
             title: 'Redirect',
@@ -497,6 +481,18 @@ const teory = {
         {
             title: 'Reducer',
             path: './conspects/teory/redux/reducer/index.html',
+        },
+        {
+            title: 'Dispatch',
+            path: './conspects/teory/redux/dispatch/index.html',
+        },
+        {
+            title: 'React-Redux',
+            path: './conspects/teory/redux/react-redux/index.html',
+        },
+        {
+            title: 'Redux-Thunk',
+            path: './conspects/teory/redux/redux-thunk/index.html',
         },
     ],
 
