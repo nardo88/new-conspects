@@ -412,10 +412,6 @@ const teory = {
             path: './conspects/teory/react/local_state/index.html',
         },
         {
-            title: 'LogIn LogOut',
-            path: './conspects/teory/react/login_logout/index.html',
-        },
-        {
             title: 'Инициализация приложения',
             path: './conspects/teory/react/initial/index.html',
         },
