@@ -560,6 +560,10 @@ const teory = {
             title: 'Перевод NextJS на TypeScript',
             path: './conspects/teory/TypeScript/next/index.html',
         },
+        {
+            title: 'типизация getServerSideProps',
+            path: './conspects/teory/TypeScript/getServerSideProps/index.html',
+        },
 
 
 

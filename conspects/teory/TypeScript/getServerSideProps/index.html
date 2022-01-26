@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Типизация getServerSideProps</h1>
+    <p>Допустим у нас есть компонент у которого му создаем метод getServerSideProps</p>
+    <img src="./img1.jpg" alt="">
+    <p>Через контекст мы можем получать Query параметры. Next имеет уже готовый интерфейс описывающий контекст, который называется <strong>NextPageContext</strong>/ Для того что бы его использовать сначала его импортируем</p>
+    <img src="./img2.jpg" alt="">
+    <p>Теперь если вызвать у контекста список его методов (ctrl + space) то мы увидим вот такую картину</p>
+    <img src="./img3.jpg" alt="">
+    <p>Там мы видим свойство query, если обратиться к нему то дальше мы уже ничего не увидим. Как нам указать определенные query параметры. Нам надо создать свой интерфейс который будет наследоваться от NextPageContext и в котором мы переопределим типизацию свойства query. Допустим наш URL выглядит так:</p>
+    <img src="./img4.jpg" alt="">
+    <p>Переопределение типизации контекста будет выглядеть вот так:</p>
+    <img src="./img5.jpg" alt="">
+    <p>Теперь передадим контексту этот интерфейс и тогда в автокомплите будут доступны наши query параметры</p>
+    <p>Точно так же мы можем поступать со свойством params</p>
+    <img src="./img6.jpg" alt="">
+
+
+
+</body>
+</html>
