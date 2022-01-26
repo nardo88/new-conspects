@@ -556,6 +556,10 @@ const teory = {
             title: 'Типизация axios (DLL)',
             path: './conspects/teory/TypeScript/axios/index.html',
         },
+        {
+            title: 'Перевод NextJS на TypeScript',
+            path: './conspects/teory/TypeScript/next/index.html',
+        },
 
 
 
