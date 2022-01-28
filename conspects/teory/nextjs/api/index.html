@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Создание API</h1>
+    <h2>Создание</h2>
+    <p>В папке pages создаем папку <b>api</b>, внутри этот папки создаем файл, называем его так как будем потом проходить по URL. т.е если назовем get-users то путь до эндпоинта будет выглядеть так: <strong>localhost:3000/api/get-users</strong></p>
+    <p>В этом файле создаем простую функцию которая будет принимать reques и response</p>
+    <img src="./img1.jpg" alt="">
+    <p>Что бы вернуть что то в JSON мы обращаемся к res и вызываем метод json. Если мы хотим вернуть какой-то код, то вызываем метод status</p>
+    <p>так же можем получать query параметры</p>
+    <img src="./img2.jpg" alt="">
+    <h2>Использование</h2>
+    <p>Здесь все просто, в getServerSideProps создаем запрос до эндпоинта и обрабатываем как обычно</p>
+    <img src="./img3.jpg" alt="">
+
+</body>
+</html>
