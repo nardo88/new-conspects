@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-	<h2>Условный оператор <b>if else</b></h2>
+	<h2>Условный оператор if else</h2>
 	<img src="prim1.jpg" alt="">
 	<br><br>
 	<h2>Тернарный оператор</h2>
@@ -36,12 +37,44 @@
 	<h3>Группировка case</h3>
 	<p>Этот способ используется если на несколько разных кейсов нам нужно выполнить один и тот же код:</p>
 	<img src="prim5.jpg" alt="">
+	<h3>Второй вариант использования Switch case</h3>
+	<p>Допустим у нас есть функции которые сравнивает два числа</p>
+	<img src="./prim6.jpg" alt="">
+	<p>Каждая функция возвращает либо true, либо false (пример простейший)</p>
+	<img src="./prim7.jpg" alt="">
+	<p>Здесь немного другой подход, мы проверяем true на результат того что вернет функция.</p>
 
 		<script>
 
-		
+			// первое число больше
+			const firstBig = (a, b) => {
+				return a > b
+			}
+			// первое число не больше
+			const firstSmall = (a, b) => {
+				return a < b
+			}
+			// числа равны
+			const equal = (a, b) => {
+				return a === b
+			}
 
+			const first = 25
+			const second = 25
 
+			switch (true) {
+				case firstBig(first, second):
+					console.log('First number is a big')
+					break;
+				case firstSmall(first, second):
+					console.log('First number is a small')
+					break;
+				case equal(first, second):
+					console.log('The numbers are equal')
+					break;
+				default:
+					break;
+			}
 
 		</script>
 
