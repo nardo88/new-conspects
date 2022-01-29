@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 	<h1>Async, Await</h1>
@@ -24,40 +25,19 @@
 	<p>Если промис что то нам возвращает, то с помощью <b>await</b> мы можем записать это в переменную</p>
 	<img src="prim5.jpg" alt="">
 	<p>Важно то, что await нельзя использовать вне функций с оператором async, а так же в функциях где async нет.</p>
-	<h2>try catch</h2>
-	<p>В случае если нам необходимо будет отлавливать ошибку, то весь код с await мы можем обернуть в конструкцию <b>try catch</b>. Вот как это будет выглядеть:</p>
-	<img src="prim6.jpg" alt="">
-	<h2>finally</h2>
-	<p>У операторов try catch так же есть блок <b>finally</b>, в нем помещается код который выполнится в любом случае</p>
-	<img src="prim7.jpg" alt="">
+	<p>Пример обявления стрелочной функции с async</p>
+	<img src="./prim9.jpg" alt="">
 	<p>Вообще что делает оператор <b>async</b>? на самом деле он преобразует нашу функцию в промис, а это значит что после вызова нашей функции, мы можем к ней применять метов <b>then</b></p>
 	<img src="prim8.jpg" alt="">
 	<script>
-		const deley = (ms) => {
-			return new Promise((resolve)=>{
-				setTimeout(()=>{
-					console.log('прошло:' + ms/1000 + ' секунд')
-					resolve()
-				}, ms)
-			})
+		
+		const foo = async (url) => {
+			const responce = await fetch(url)
+			const data = await responce.json()
+			console.log(data)
 		}
 
-		async function MyAwait () {
-
-			try{
-				await deley(2000)
-				await deley(3000)
-				await deley(2500)
-
-			} catch(e){
-				console.error(e)
-			} finally{
-				console.log('Функция выполнена')
-			}
-			
-		}	
-
-		MyAwait().then(()=>console.log('Мы применили метод then') )
+		foo('https://jsonplaceholder.typicode.com/todos/1')
 
 	</script>
 </body>
