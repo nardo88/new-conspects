@@ -170,6 +170,10 @@ const teory = {
             path: './conspects/teory/javaScript/uslovnie_operatory/index.html',
         },
         {
+            title: 'Обработка ошибок (try catch)',
+            path: './conspects/teory/javaScript/try_catch/index.html',
+        },
+        {
             title: 'Циклы',
             path: './conspects/teory/javaScript/cikli/index.html',
         },

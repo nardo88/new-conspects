@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Обработка ошибок (try... catch)</h1>
+    <p>Существует три секции для кода:</p>
+    <ul>
+        <li><b>try</b> - сюда помещается код, который потенциально может вызвать ошибку</li>
+        <li><b>catch</b> - участок кода который будет вызван в случае возникновения ошибки в секции try. Эта секция входным параметром может принимать error - ошибку</li>
+        <li><b>finally</b> - секция куда помещается код который будет выполнен в любом случае, возникнет ли ошибка или нет</li>
+    </ul>
+    <h3>Пример</h3>
+    <img src="./img1.jpg" alt="">
+    <p>Малоизвестно, но try требует только одну из секций (либо catch, либо finally). Блок finally можно рассматривать, как функцию обратного вызова. Finally выполнится всегда сразу же после выполнения try.</p>
+    <p>Что будет если в нашем примере мы в блок try поместим return?</p>
+    <img src="./img2.jpg" alt="">
+    <p>В этом случае выполнится два лога,  тот что в try и тот что в finally. Дальше выполнение функции прервется из за return и наша функция вернет значение 42. Но что будет если в секцию finally так же вставить return </p>
+    <img src="./img3.jpg" alt="">
+    <p>В этом случае наша функция вернет значение 50, так как return секции finally переопределит return секции try</p>
+    <h2>Вызов ошибки</h2>
+    
+
+
+
+
+    <script>
+
+        const foo = (a, b) => {
+            try {
+                if (b === 0) {
+                    throw 'second parametd equal zerro'
+                }
+                return a / b
+            } catch (error) {
+                console.log(error)
+            } finally {
+                console.log("i don't care, i do it anyway")
+                return 50
+            }
+            console.log('maybe it wil happen')
+        }
+
+
+    </script>
+</body>
+</html>
