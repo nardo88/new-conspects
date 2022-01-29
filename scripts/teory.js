@@ -162,7 +162,7 @@ const teory = {
             path: './conspects/teory/javaScript/modul/index.html',
         },
         {
-            title: 'Математические операторы',
+            title: 'Операторы',
             path: './conspects/teory/javaScript/math/index.html',
         },
         {
