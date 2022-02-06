@@ -773,6 +773,10 @@ const teory = {
             title: 'MongoDB',
             path: './conspects/teory/nextjs/mongodb/index.html',
         },
+        {
+            title: 'Авторизация/Регистрация API JWT',
+            path: './conspects/teory/nextjs/auth/index.html',
+        },
     ],
     NodeJS: [{
             title: 'Модули',
