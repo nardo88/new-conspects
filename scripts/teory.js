@@ -735,7 +735,7 @@ const teory = {
         },
         {
             title: '_app.jsx',
-            path: './conspects/teory/nextjs/_app/index.html',
+            path: './conspects/teory/nextjs/app/index.html',
         },
         {
             title: 'Head',
