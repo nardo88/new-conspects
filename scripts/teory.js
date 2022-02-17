@@ -734,6 +734,10 @@ const teory = {
             path: './conspects/teory/nextjs/routing/index.html',
         },
         {
+            title: '_app.jsx',
+            path: './conspects/teory/nextjs/_app/index.html',
+        },
+        {
             title: 'Head',
             path: './conspects/teory/nextjs/head/index.html',
         },
