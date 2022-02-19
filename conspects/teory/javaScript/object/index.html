@@ -138,30 +138,29 @@
 <p>Так же <b>assign</b> можно использовать для объединения двух объектов в один</p>
 <img src="prim22.jpg">
 
+
 <script>
 
-	// 1 вариант
-	const obj = {
-		name: 'max'
+	const example = {
+		_id: 1,
+		title: 'Заголовок',
+		description: 'Рыбный текст для примера',
+		createdAt: new Date().getTime()
 	}
-	const objClone = Object.assign({}, obj)
 
-	// 2 вариант
-	let newObj = {}
-	Object.assign(newObj, obj)
-	console.log(newObj);
+	var p = new Proxy(example, 
+		{
+			get: function(target, name) {
+				console.log(target, name);
+			},
+			set: function(...values){
+				console.log(values);
+			}
+		}
+	)
 
+	console.log(p);
 
-
-	const obj1 = {
-		name: 'Max'
-	}
-	const obj2 = {
-		age: 32
-	}
-	const objAll = Object.assign({}, obj1, obj2)
-
-	console.log(objAll);
 
 </script>
 

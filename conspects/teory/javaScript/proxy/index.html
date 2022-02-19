@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Proxy</h1>
+    <p><b>Proxy</b> - это класс который позволяет гибко взаимодействовать с объектом. </p>
+    <h3>Синтаксис</h3>
+    <img src="./img1.jpg" alt="">
+    <p>Прокси принимает два аргумента:</p>
+    <ul>
+        <li>Текущий объект</li>
+        <li>handler - объект с геттером и сетером</li>
+    </ul>
+    <p>Геттер будет запущен в случае вызова значения свойства прокси. Этот метод принимает три аргумента:
+        текущий объект, название свойства к которому обратились и сам прокси</p>
+    <p>Сетер будет вызван в случае если мы попытаемся записать в свойство объекта какое либо значение. Геттер будет
+        принимать четыре аргумента: текущий объект, название свойства к которому обратились, новое значение свойства и
+        сам экземпляр прокси. Что бы внутри сетера получить старое значение свойства, мы просто обращаемся target[name]
+        - сетер юудет вызван до перезаписи свойства</p>
+    <h3>Пример</h3>
+    <img src="./img2.jpg" alt="">
+    <p>Запросим значение свойства</p>
+    <img src="./img3.jpg" alt="">
+    <p>Зададим значение свойству</p>
+    <img src="./img4.jpg" alt="">
+    <script>
+
+        // исходный объект
+        const obj = {
+            _id: 1,
+            title: 'Заголовок',
+            description: 'Рыбный текст для примера',
+            createdAt: new Date().getTime()
+        }
+
+        // handler для отлавливания изменений
+        const handler = {
+            // в случае обращения к свойству
+            get: function (...args) {
+                console.log(args)
+            },
+            // в случае записи нового значения
+            set: function (target, name, newValue, proxy) {
+                console.log('target:', target)
+                console.log('name:', name)
+                console.log('Новое значение:', newValue)
+                console.log('Старое значение:', target[name])
+                console.log('proxy:', proxy)
+            }
+        }
+
+        const p = new Proxy(obj, handler)
+
+    </script>
+</body>
+
+</html>

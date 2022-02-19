@@ -194,6 +194,10 @@ const teory = {
             path: './conspects/teory/javaScript/object/index.html',
         },
         {
+            title: 'Proxy',
+            path: './conspects/teory/javaScript/proxy/index.html',
+        },
+        {
             title: 'Классы',
             path: './conspects/teory/javaScript/class/index.html',
         },
