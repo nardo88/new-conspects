@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Деплой проекта на gitHub pages</h1>
+    <p>Допустим унас есть проект на Next. Здесь важно что бы сам проект находился в корне репозитория. </p>
+    <p><span class="num">1</span> первое что необходимо сделать - это добавить в package.json еще один скрипт</p>
+    <span class="code">"export": "next export"</span>
+    <img src="./img1.jpg" alt="">
+    <p><span class="num">2</span> Теперь настраиваем Actions в gitHub</p>
+    <p>Для этого открываем наш репозиторий и переходим в раздел <strong>Actions</strong></p>
+    <img src="./img2.jpg" alt="">
+    <p>Далее нажимаем кнопку <strong>Configure</strong> в разделе NodeJS где написано <strong>Build and test a Node.js
+            project with npm.</strong></p>
+    <img src="./img3.jpg" alt="">
+    <p>Откроется страница с файлом конфигурации jobs (задачи)</p>
+    <p>Рассмотрим конфигурацию</p>
+    <img src="./img4.jpg" alt="">
+    <p>Далее</p>
+    <img src="./img5.jpg" alt="">
+    <p>Вот пример окончательной конфигурации</p>
+    <pre>
+        # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+        # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+        
+        name: Node.js CI
+        
+        on:
+          push:
+            branches: [ main ]
+          pull_request:
+            branches: [ main ]
+        
+        jobs:
+          build:
+        
+            runs-on: ubuntu-latest
+        
+            strategy:
+              matrix:
+                node-version: [14.x]
+                # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        
+            steps:
+            - uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              env:
+                ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+              with:
+                node-version: ${{ matrix.node-version }}
+                cache: 'npm'
+            - run: npm ci
+            - run: npm run build --if-present
+            - run: npm run export 
+            - run: touch ./out/.nojekyll
+            
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@3.5.9
+              env:
+                ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+              with:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                BRANCH: gh-pages # The branch the action should deploy to.
+                FOLDER: out # The folder the action should deploy.
+    </pre>
+    <p>После того как добавили изменения коммитим изменения</p>
+    <img src="./img6.jpg" alt="">
+    <p>После коммита появится yml файл. И так же запустится задача</p>
+    <img src="./img7.jpg" alt="">
+    <p>После того как задача отработала появится ветка gh-pages</p>
+    <p><span class="num">3</span> Настраиваем GitHub Pages</p>
+    <p>Переходим в репозитории во вкладку <strong>Settings</strong> - раздел <strong>pages</strong> и указываем для pages дефолтную ветку gh-pages</p>
+    <img src="./img8.jpg" alt="">
+    <p><span class="num">4</span> Добавляем в проект фалй конфигурации Next</p>
+    <p>Это нужно что бы Next понимал дефолтный путь приложения и префикс. Так как в GH-PAGES получается домен второго уровня</p>
+    <p>Файл выглядит вот так:</p>
+    <img src="./img9.jpg" alt="">
+    <p>где example - это название репозитория</p>
+    <p>Теперь при пуше в мастер изменения будет запускаться задача, которая билдит и деплоит проект</p>
+</body>
+
+</html>

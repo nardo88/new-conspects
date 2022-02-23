@@ -785,6 +785,10 @@ const teory = {
             title: 'Авторизация/Регистрация API JWT',
             path: './conspects/teory/nextjs/auth/index.html',
         },
+        {
+            title: 'Деплой проекта Next на gitHub ',
+            path: './conspects/teory/nextjs/deploy/index.html',
+        },
     ],
     NodeJS: [{
             title: 'Модули',
