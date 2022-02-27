@@ -709,9 +709,14 @@ const teory = {
 
     ],
 
-    MongoDB: [{
+    MongoDB: [
+        {
             title: 'Установка среды',
             path: './conspects/teory/mongoDb/install/index.html',
+        },
+        {
+            title: 'Основные операции',
+            path: './conspects/teory/mongoDb/base/index.html',
         },
         {
             title: 'Работа с БД',
