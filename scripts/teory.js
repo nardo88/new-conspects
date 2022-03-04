@@ -791,8 +791,12 @@ const teory = {
             path: './conspects/teory/nextjs/auth/index.html',
         },
         {
-            title: 'Деплой проекта Next на gitHub ',
+            title: 'Деплой проекта Next на gitHub',
             path: './conspects/teory/nextjs/deploy/index.html',
+        },
+        {
+            title: 'Компонент Image',
+            path: './conspects/teory/nextjs/image/index.html',
         },
     ],
     NodeJS: [{

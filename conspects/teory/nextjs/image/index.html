@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Компонент Image</h1>
+    <p><strong>Next JS</strong> предоставляет свой компонент Image</p>
+    <h3>Синтаксис</h3>
+    <p>Импорт</p>
+    <img src="./img1.jpg" alt="">
+    <p>Использование</p>
+    <img src="./img2.jpg" alt="">
+    <h3>Атрибуты</h3>
+    <ul>
+        <li><b>width, height</b> - ширина и высота картинки. Обязательный атрибут, без него Next выдаст ошибку.</li>
+        <li><b>layout</b> - определяет как будет вести себя картинка при изменении ширины экрана. Варианты:
+            <ul>
+                <li><strong>fill</strong> - Если у родителя есть несколько изображений то они все будут наложены друг на друга. Напоминает position: absolute. Родителем является блок с position relative. Заставляет изображение расширяться, чтобы заполнить его родительский элемент. изображение искажается. Что бы изображение не искажалось можно использовать атрибут <strong>objectFit</strong></li>
+                <li><strong>fixed</strong> - фиксированный размер изображения, при изменении ширины экрана будут появляться полосы прокрутки у браузера</li>
+                <li><strong>responsive</strong> - займут всю ширину родителя и будут уменькашься при уменьшении родителя. при том что изображение не будет искажаться</li>
+            </ul>
+        </li>
+        <li><b>objectFit</b> - Работает в связкке со свойством layout = fill. То же что и object-fit в css. те же варианты с такими же свойствами</li>
+        <li><b>objectPosition</b> - Работает в связкке со свойством layout = fill. Тоже самое что в CSS object-position</li>
+        <li><b>loading</b> - способ загрузки изображения. По умолчанию имеет значение lazy т.е ленивая загрузка, очень положительно влияет на производительность.</li>
+    </ul>
+</body>
+</html>
