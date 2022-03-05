@@ -734,9 +734,14 @@ const teory = {
 
     ],
 
-    NextJS: [{
+    NextJS: [
+        {
             title: 'Установка среды',
             path: './conspects/teory/nextjs/install/index.html',
+        },
+        {
+            title: 'Переменные окружения',
+            path: './conspects/teory/nextjs/environment/index.html',
         },
         {
             title: 'Routing',

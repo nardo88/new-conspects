@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Переменные окружения</h1>
+    <p>Переменные окружения хранятся в файле <strong>.env</strong>. Для того что бы иметь доступ к ним необходимо установить библитотеки</p>
+    <span class="code">npm i --save-dev cross-env dotenv</span>
+    <ul>
+        <li><strong>dotenv</strong> - дает доступ к переменным из кода</li>
+        <li><strong>cross-env</strong> - дает доступ к переменным из scripts в package.json</li>
+    </ul>
+    <h2>cross-env</h2>
+    <p>Для того что бы переменные работали первое, что нам надо сделать это создать файл <strong>next.config.js</strong> в корне проекта и добавить туда вот такой код:</p>
+    <img src="./img1.jpg" alt="">
+    <p>Затем в файле <strong>package.json</strong> мы в разделе скриптов прописываем наши переменные:</p>
+    <img src="./img2.jpg" alt="">
+    <p>После этого наши переменные будут доступны в любом месте</p>
+    <img src="./img3.jpg" alt="">
+    <h2>dotenv</h2>
+    <p>В корне проекта создаем файл <strong>.env</strong></p>
+    <p>В него помещаем нашу переменную:</p>
+    <img src="./img4.jpg" alt="">
+    <p>Далее в файле <strong>next.config.js</strong> добавляыем вот такую строчку</p>
+    <img src="./img5.jpg" alt="">
+    <p>Теперь в  getServerSideProps мы можем получать доступ до переменной</p>
+    <img src="./img6.jpg" alt="">
+
+</body>
+</html>
