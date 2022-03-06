@@ -719,6 +719,10 @@ const teory = {
             path: './conspects/teory/mongoDb/base/index.html',
         },
         {
+            title: 'Выборка записей',
+            path: './conspects/teory/mongoDb/find/index.html',
+        },
+        {
             title: 'Обновление записи',
             path: './conspects/teory/mongoDb/update/index.html',
         },
