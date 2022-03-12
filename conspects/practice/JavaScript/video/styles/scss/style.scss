@@ -61,17 +61,17 @@ main {
 }
 
 .container {
-  min-width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 
   @media (max-width: 1024px) {
     max-width: 550px;
-    min-width: auto;
+    max-width: auto;
   }
 
   @media (max-width: 650px) {
     max-width: 300px;
-    min-width: auto;
+    max-width: auto;
   }
 }
 
@@ -100,7 +100,7 @@ main {
 
     @media (max-width: 650px) {
       max-width: 100px;
-      min-width: auto;
+      max-width: auto;
     }
   }
 

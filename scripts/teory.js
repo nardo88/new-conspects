@@ -860,6 +860,10 @@ const teory = {
             title: 'Простая авторизация',
             path: './conspects/teory/nodejs/simpleAuth/index.html',
         },
+        {
+            title: 'Deploy NodeJS to Vercel',
+            path: './conspects/teory/nodejs/vercel/index.html',
+        },
 
 
     ],

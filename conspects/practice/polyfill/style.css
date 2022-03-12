@@ -78,8 +78,36 @@ img{
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
+    max-width: 750px;
 }
 
 xmp{
     background: rgb(204, 203, 203);
+}
+
+@media (max-width: 720px){
+    video{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1rem;
+        
+    }
+
+    p {
+        line-height: 14px;
+        font-size: 12px;
+    }
+
+    img{
+        max-width: 100%;
+    }
 }

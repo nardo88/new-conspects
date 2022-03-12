@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Деплой NodeJS проекта в Vercel</h1>
+    <h2>Видео по работе с Vercel</h2>
+    <h3>Deploy NodeJS to Vercel</h3>
+    <video controls="controls"  width="50%" height="auto"  src="https://firebasestorage.googleapis.com/v0/b/forconspects.appspot.com/o/video%2FVercel%20express.mp4?alt=media&token=7aedebb0-46a5-4603-b16b-476b1cda68ae"></video>
+    <h3>Deploy React to Vercel</h3>
+    <video controls="controls"  width="50%" height="auto"  src="https://firebasestorage.googleapis.com/v0/b/forconspects.appspot.com/o/video%2FVercel%20react.mp4?alt=media&token=b7e83414-830d-456b-b914-4105242061d8"></video>
+   
+    <h2>Авторизация в Vercel</h2>
+    <p>Переходим на сайт <a href="https://vercel.com/" target="_blank">Vercel</a> жмем на <strong>Login</strong> и авторизовываемся под учеткой github</p>
+    <p>После того как авторизовались и добавили свой гитхаб аккаунт в Vercel создаем новый проект</p>
+    <img src="./img1.jpg" alt="">
+    <p>На следующей итерации выбираем проект из GitHub в котором написан у нас REST API</p>
+    <img src="./img2.jpg" alt="">
+    <h2>Описание проекта на GitHub</h2>
+    <p>Здесь все как обычно, начинаем с иниуциализации проекта. <b>npm init -y</b>. Далее устанавливаем express, nodemon и cors (cors нужен для настройки CORS политик).</p>
+    <p>Вот как будет выглядеть package.json</p>
+    <img src="./img3.jpg" alt="">
+    <p>Исполняемый файл, минимальная сборка</p>
+    <img src="./img4.jpg" alt="">
+    <h2>Deploy</h2>
+    <p>После выбора репозитория, откроется вот такая страница</p>
+    <img src="./img5.jpg" alt="">
+    <p>Жмем Deploy и если все хорошо получаем вот такую страницу</p>
+    <img src="./img6.jpg" alt="">
+    <p>В нашем проекте дефолтный ендпоинт был с добавлением в URL api поэтому переходим по полученной ссылке и добавляем слеш api</p>
+    <img src="./img7.jpg" alt="">
+    <p>Теперь к нашей API можно случаться например используя fetch</p>
+    <img src="./img8.jpg" alt="">
+    <img src="./img9.jpg" alt="">
+
+    <script>
+
+        fetch('https://api-nardo88.vercel.app/api')
+        .then(data => data.json())
+        .then(data => console.log(data))
+
+
+    </script>
+</body>
+</html>

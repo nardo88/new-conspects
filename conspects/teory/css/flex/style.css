@@ -22,7 +22,7 @@
 
 .child1{
     background-color: #60AAF5;
-    min-width: 2.5rem;
+    max-width: 2.5rem;
     min-height: 2.5rem;
     Border: 2px solid white;
     color: red;
@@ -39,7 +39,7 @@
     display: flex;
 }
 .buttons{
-    min-width: 100px;
+    max-width: 100px;
     margin: 5px;
     border: none;
     outline: none;
