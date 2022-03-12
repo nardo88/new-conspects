@@ -738,6 +738,10 @@ const teory = {
             title: 'Агрегация',
             path: './conspects/teory/mongoDb/agregatin/index.html',
         },
+        {
+            title: 'Индексы',
+            path: './conspects/teory/mongoDb/index/index.html',
+        },
 
 
     ],
