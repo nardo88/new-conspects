@@ -1,0 +1,30 @@
+.wrapper{
+    border: 2px solid rgb(65, 64, 64);
+    border-radius: 4px;
+}
+
+.top{
+    padding: 10px;
+    
+    cursor: pointer;
+    color: rgb(65, 64, 64);
+    background: #fff;
+    transition: .3s;
+
+}
+
+.top:hover{
+    background: rgb(65, 64, 64);
+    color: #fff;
+}
+
+.content{
+    padding: 10px;
+    border-top: 2px solid rgb(65, 64, 64);
+}
+
+.bottom{
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}

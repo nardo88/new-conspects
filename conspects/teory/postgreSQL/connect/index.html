@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+</head>
+<body>
+    <h1>Подключение к БД с помощью NodeJS</h1>
+    <p>Для работы с PostgreSQL в NodeJS нам понадобится пакет <b>pg</b>. Ссылка на <a href="https://www.npmjs.com/package/pg" target="_blank">npm</a></p>
+    <p>Допустим у нас есть минимальная конфигурация API на Express</p>
+    <img src="./img1.jpg" alt="">
+    <h3>Конфигурация БД</h3>
+    <p>В папке с проектом создаем файл <b>bd.js</b> с вот таким содержимым:</p>
+    <img src="./img2.jpg" alt="">
+    <p>Следующим шагом мы создаем таблицы в БД. Для этого в корне проекта создаем файл <b>database.sql</b>. Здесь обращаем внимание на точки с запятой!!!!</p>
+    <img src="./img3.jpg" alt="">
+    <ul>
+        <li><b>id SERIAL PRIMARY KEY,</b> - означает что это уникальный идентификатор в виде счетчика</li>
+        <li><b>VARCHAR(255)</b> - строка с максимальным значением 255 символов</li>
+        <li><b>user_id INTEGER,</b> - числовое значение</li>
+        <li><b>FOREIGN KEY (user_id) REFERENCES person (id)</b> - FOREIGN KEY - внешний ключ - user_id ссылается (REFERENCES) на таблицу person на ключ id</li>
+    </ul>
+    <p>Заходим в PowerShell подключаемся к БД и вставляем первый скрипт создания таблицы person</p>
+    <img src="./img4.jpg" alt="">
+    <p>Аналогично создаем вторую таблицу</p>
+    <img src="./img5.jpg" alt="">
+    <p>Создаем две папки routers и controllers в корне проекта, там соответственно создаем файлы <b>user.routers.js</b> и <b>user.controllers.js</b></p>
+    <p>Файл контроллера пока выглядит вот так</p>
+    <img src="./img6.jpg" alt="">
+    <p>Файл маршрута выглядит пока так</p>
+    <img src="./img7.jpg" alt="">
+    <p>Далее в index.js файле импортируем наши маршруты</p>
+    <img src="./img8.jpg" alt="">
+    <p>Теперь опишем все методы CRUD в нашем контроллере</p>
+    <img src="./img9.jpg" alt="">
+    <p>Маршруты постов</p>
+    <img src="./img10.jpg" alt="">
+    <p>Контроллер постов</p>
+    <img src="./img11.jpg" alt="">
+    <p>Index.js</p>
+    <img src="./img12.jpg" alt="">
+
+
+
+</body>
+</html>

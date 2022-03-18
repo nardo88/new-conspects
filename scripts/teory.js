@@ -746,6 +746,22 @@ const teory = {
 
     ],
 
+
+    PostgreSQL: [
+        {
+            title: 'Установка среды',
+            path: './conspects/teory/postgreSQL/install/index.html',
+        },
+        {
+            title: 'Создание БД',
+            path: './conspects/teory/postgreSQL/create/index.html',
+        },
+        {
+            title: 'Подключение в NodeJS',
+            path: './conspects/teory/postgreSQL/connect/index.html',
+        },
+    ],
+
     NextJS: [
         {
             title: 'Установка среды',

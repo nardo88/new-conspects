@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+</head>
+
+<body>
+    <h1>Создание БД</h1>
+    <h2>Создание схемы</h2>
+    <p>Наша БД будет иметь следующую структуру</p>
+    <img src="./img.jpg" alt="">
+    <p>Здесь у нас две таблицы. Person - это пользователь, имеет следующие ключи:</p>
+    <ul>
+        <li><b>id</b> - уникальный идентификатор SERIAL</li>
+        <li><b>name</b> - имя пользователя строковое значение VARCHAR</li>
+        <li><b>surname</b> - фамилия пользователя строковое значение VARCHAR</li>
+    </ul>
+    <p>Вторая таблица имеет поля:</p>
+    <ul>
+        <li><b>id</b> - уникальный идентификатор SERIAL</li>
+        <li><b>title</b> - заголовок статьи строковое значение VARCHAR</li>
+        <li><b>content</b> - содержимое статьи строковое значение VARCHAR</li>
+        <li><b>user_id</b> - id пользователя внешний ключ FK</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Установка PostgreSQL</h1>
+    <p><a href="https://www.postgresql.org/" target="_blank">Ссылка на фоициальный сайт</a></p>
+    <p>Заходим на сайт и скачивыем диструбутив</p>
+    <p>Установка диструбутива тривиальна:</p>
+    <div class="wrapper">
+        <div class="top">Показать этапы установки</div>
+        <div class="bottom">
+            <div class="content">
+                <img src="./img1.jpg" alt="">
+                <img src="./img2.jpg" alt="">
+                <img src="./img3.jpg" alt="">
+                <img src="./img4.jpg" alt="">
+                <img src="./img5.jpg" alt="">
+                <img src="./img6.jpg" alt="">
+                <img src="./img7.jpg" alt="">
+                <img src="./img8.jpg" alt="">
+                <img src="./img9.jpg" alt="">
+                <img src="./img10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <h2>Проверка установленной среды</h2>
+    <p>По умолчанию на Windows PostgreSQL устанавливается в директорию <b>C:\Program Files\PostgreSQL\14\bin</b>, из этой директории открываем powershell и вводим следующие команды (перед командой вводим .\ так как в глобальную переменную path мы не указывали путь до этой директории):</p>
+    <ul>
+        <li><b>psql --version</b> - убеждаемся что он установлен</li>
+        <li><b>psql -U postgres</b> - входим в СУБД, при входе он запросит пароль суперпользователя</li>
+        <li><b>\l</b> - покажет список существующих баз данных</li>
+        <img src="./img11.jpg" alt="">
+
+        <li><b>create database node_postgress;</b> - создаем базу данных node_postgress (обязательно в конце точку с запятой)</li>
+        <li><b>\connect node_postgress</b> - подключаемся к базе node_postgress</li>
+        <li><b>\dt</b> - Покажет существующие в базе таблицы</li>
+        <li><b>\! chcp 1251</b> - Поправит корректное отображение кирилицы</li>
+        <li><b>select * from person;</b> - Получить все поля из таблицы person</li>
+    </ul>
+   
+    
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
