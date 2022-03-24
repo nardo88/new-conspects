@@ -324,6 +324,10 @@ const teory = {
             path: './conspects/teory/react/jsx/index.html',
         },
         {
+            title: 'Патерны React',
+            path: './conspects/teory/react/patern/index.html',
+        },
+        {
             title: 'Работа со стилями в React',
             path: './conspects/teory/react/style/index.html',
         },
