@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
 </head>
 <body>
     <h1>Агрегированные запросы</h1>
@@ -87,11 +88,23 @@
     <img src="./img13.jpg" alt="">
     <h3>$unwind</h3>
     <p>Преобразует поле с типом массива в несколько документов</p>
+    <p>Допустим мы добавили в базу документ у которого одно из полей является массивом (content)</p>
+    <img src="./img15.jpg" alt="">
+    <p>Теперь если мы применим к полю content оператор агрегации $unwind</p>
+    <img src="./img16.jpg" alt="">
+    <p>То получим вот такой результат</p>
+    <img src="./img17.jpg" alt="">
+    <p>Т.е. для каждого элемента массива был создан свой вариант документа.</p>
     <h3>$sort $limit $skip</h3>
     <p>Сортировка, лимит и смещение документов. Синтаксис и поведение аналогично стандартному поведению монго</p>
     <h3>Как получить количество записей в коллекции</h3>
     <img src="./img14.jpg" alt="">
-
+    <h3>Как объединять несколько коллекций в одном запросе</h3>
+    <p>Допустим у нас есть две коллекции (посты и пользователи). Вот как выглядят эти два документа</p>
+    <img src="./img18.jpg" alt="">
+    <img src="./img19.jpg" alt="">
+    <p>Вот как выглядит объединение эти двух коллекций в одном запросе агрегации</p>
+    <img src="./img20.jpg" alt="">
 
 
 
