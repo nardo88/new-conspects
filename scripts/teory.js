@@ -320,10 +320,6 @@ const teory = {
             path: './conspects/teory/react/create_react_app/index.html',
         },
         {
-            title: 'Особенности JSX',
-            path: './conspects/teory/react/jsx/index.html',
-        },
-        {
             title: 'Патерны React',
             path: './conspects/teory/react/patern/index.html',
         },
@@ -334,6 +330,18 @@ const teory = {
         {
             title: 'Компонента',
             path: './conspects/teory/react/componenta/index.html',
+        },
+        {
+            title: 'Контейнерные компоненты',
+            path: './conspects/teory/react/container/index.html',
+        },
+        {
+            title: 'Классовые компоненты',
+            path: './conspects/teory/react/class/index.html',
+        },
+        {
+            title: 'High Order Component (ХОК)',
+            path: './conspects/teory/react/hoc/index.html',
         },
         {
             title: 'Props',
@@ -371,10 +379,7 @@ const teory = {
             title: 'ООП в React',
             path: './conspects/teory/react/oop/index.html',
         },
-        {
-            title: 'Контейнерные компоненты',
-            path: './conspects/teory/react/container/index.html',
-        },
+      
         {
             title: 'Context API',
             path: './conspects/teory/react/context/index.html',
@@ -383,10 +388,7 @@ const teory = {
             title: 'Rest API',
             path: './conspects/teory/react/rest-api/index.html',
         },
-        {
-            title: 'Классовые компоненты',
-            path: './conspects/teory/react/class/index.html',
-        },
+       
         {
             title: 'Жизненный цикл компоненты',
             path: './conspects/teory/react/lifecycle/index.html',

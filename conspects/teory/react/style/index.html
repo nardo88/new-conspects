@@ -9,7 +9,7 @@
 <body>
     <h1>Работа со стилями в React</h1>
     <h2>Способы подключения стилей</h2>
-    <p><span class="num">1</span> Через импорта файла CSS</p>
+    <h3>Через импорт файла CSS</h3>
     <p>В разделе импортов мы прописываем строчку:</p>
     <img src="prim1.jpg" alt="">
     <p>Далее создаем файл App.css и там как обычно прописываем все необходимые стили. (название фала произвольное)</p>
@@ -27,7 +27,7 @@
     <img src="prim5.jpg" alt="">
     <p>Что бы указать несколько классов то мы используем строковую интерполяцию (или шаблонные строки)</p>
     <img src="prim6.jpg" alt="">
-    <p><span class="num">2</span> С помощью Styled Component</p>
+    <h2>С помощью Styled Component</h2>
     <p><a href="https://styled-components.com/">Офф сайт</a></p>
     <h3>Установка библиотеки</h3>
     <span class="code">npm install --save styled-components</span>
@@ -48,7 +48,15 @@
     <p><span class="num">3</span> Прописание инлайновых стилей тегам в JSX</p>
     <p>Тегу создаем атрибут style и в него передаем объект. Свойства объекта пишем в решиме camleCase</p>
     <img src="prim13.jpg" alt="">
-
+    <h2>emotion/react</h2>
+    <p>Установка пакета</p>
+    <span class="code">npm i @emotion/react</span>
+    <p>Синтаксис</p>
+    <img src="prim14.jpg" alt="">
+    <p>Столкнулся с вот такой ошибкой</p>
+    <img src="prim15.jpg" alt="">
+    <p>Лечится тем что в самом верху файла добавляется вот такой комментарий</p>
+    <span>/** @jsxImportSource @emotion/react */</span>
     <script>
 
         import styled from 'styled-components'
