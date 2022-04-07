@@ -379,7 +379,7 @@ const teory = {
             title: 'ООП в React',
             path: './conspects/teory/react/oop/index.html',
         },
-      
+
         {
             title: 'Context API',
             path: './conspects/teory/react/context/index.html',
@@ -388,7 +388,7 @@ const teory = {
             title: 'Rest API',
             path: './conspects/teory/react/rest-api/index.html',
         },
-       
+
         {
             title: 'Жизненный цикл компоненты',
             path: './conspects/teory/react/lifecycle/index.html',
@@ -479,8 +479,7 @@ const teory = {
         },
     ],
 
-    Redux: [
-        {
+    Redux: [{
             title: 'Создание',
             path: './conspects/teory/redux/create/index.html',
         },
@@ -715,8 +714,7 @@ const teory = {
 
     ],
 
-    MongoDB: [
-        {
+    MongoDB: [{
             title: 'Установка среды',
             path: './conspects/teory/mongoDb/install/index.html',
         },
@@ -753,8 +751,7 @@ const teory = {
     ],
 
 
-    PostgreSQL: [
-        {
+    PostgreSQL: [{
             title: 'Установка среды',
             path: './conspects/teory/postgreSQL/install/index.html',
         },
@@ -768,8 +765,7 @@ const teory = {
         },
     ],
 
-    NextJS: [
-        {
+    NextJS: [{
             title: 'Установка среды',
             path: './conspects/teory/nextjs/install/index.html',
         },
@@ -845,6 +841,10 @@ const teory = {
         {
             title: 'Взаимодействие с ОС',
             path: './conspects/teory/nodejs/os/index.html',
+        },
+        {
+            title: 'События',
+            path: './conspects/teory/nodejs/events/index.html',
         },
         {
             title: 'Создание Rest API',
