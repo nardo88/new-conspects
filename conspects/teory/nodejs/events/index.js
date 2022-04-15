@@ -1,16 +1,16 @@
 
-
-const http = require('http')
-const server = http.createServer((req, res) => {
-}).listen(8080)
-
-server.on('connection', () => {
-    server.emit('myEvent', Date.now())
+// импортируем класс из events
+const EventEmiter = require('events').EventEmitter
+// создаем экземпляр класса
+const emiter = new EventEmiter()
+// создаем слушатель на кастомное событие
+emiter.on('myEvent', (arg) => {
+    console.log(arg)
 })
 
-server.on('myEvent', (date) => {
-    console.log(`my own event done ${date}`)
-})
+
+
+
 
 
 
