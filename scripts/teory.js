@@ -843,6 +843,10 @@ const teory = {
             path: './conspects/teory/nodejs/os/index.html',
         },
         {
+            title: 'Работа с файлами',
+            path: './conspects/teory/nodejs/file/index.html',
+        },
+        {
             title: 'События',
             path: './conspects/teory/nodejs/events/index.html',
         },
