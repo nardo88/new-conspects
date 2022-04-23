@@ -492,6 +492,14 @@ const teory = {
             path: './conspects/teory/redux/dispatch/index.html',
         },
         {
+            title: 'useDispatch',
+            path: './conspects/teory/redux/useDispatch/index.html',
+        },
+        {
+            title: 'useSelector',
+            path: './conspects/teory/redux/useSelector/index.html',
+        },
+        {
             title: 'React-Redux',
             path: './conspects/teory/redux/react-redux/index.html',
         },
@@ -577,11 +585,8 @@ const teory = {
             title: 'типизация getServerSideProps',
             path: './conspects/teory/TypeScript/getServerSideProps/index.html',
         },
-
-
-
-
     ],
+
     Wordpress: [{
             title: 'Установка на OpenServer',
             path: './conspects/teory/Wordpress/ustanovka/index.html',
@@ -640,6 +645,7 @@ const teory = {
         },
 
     ],
+
     FireBase: [{
             title: 'Инициализация и deploy react приложения на хостинг FireBase',
             path: './conspects/teory/Firebase/init/index.html',
