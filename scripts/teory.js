@@ -855,6 +855,10 @@ const teory = {
             path: './conspects/teory/nodejs/events/index.html',
         },
         {
+            title: 'Config',
+            path: './conspects/teory/nodejs/config/index.html',
+        },
+        {
             title: 'Создание Rest API',
             path: './conspects/teory/nodejs/restApi/index.html',
         },

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+</head>
+<body>
+    <h1>Config</h1>
+    <p>Данная библиотека позволяет удобно управлять глобальными переменными, в которых мы можем хранить ключи или пути до директории проекта.</p>
+    <p>Установка</p>
+    <span id="npm" class="code">some code</span>
+    <script>
+        const elem = document.getElementById('npm')
+        const text = elem.textContent
+        elem.addEventListener('click', () => {
+            navigator.clipboard.writeText(elem.textContent)
+            elem.classList.add('code__active')
+
+            setTimeout(() => {
+                elem.classList.remove('code__active')
+            }, 2000)
+        })
+    </script>
+
+    <p>После установки в корне проекта создаем папку <b>config</b>, в которой создаем файл <b>default.json</b>. Этот файл должен иметь обыкновенную JSON структуру.</p>
+    <p>Привер:</p>
+    <img src="./img1.jpg" alt="">
+    <p>Теперь что бы получить значение переменной внутри кода Node.JS мы сначала импортируем <b>config</b></p>
+    <img src="./img2.jpg" alt="">
+    <p>Затем у config вызываем метод get и туда передаем строкой название ключа в JSON дереве.</p>
+    <img src="./img3.jpg" alt="">
+
+
+</body>
+</html>
