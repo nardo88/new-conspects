@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+</head>
+<body>
+    <h1>Docker - установка</h1>
+    <p><a href="https://www.docker.com/get-started/">Страница</a> где можно скачать docker.</p>
+    <p><a href="https://hub.docker.com/">hub</a> место где можно публиковать свои образы</p>
+    <h3>Установка на windows</h3>
+    <p>После установки я словил вот такую ошибку:</p>
+    <img src="./img1.jpg" alt="">
+    <p><span class="num">1</span> первое что делаем - это запускаем powerShell от имени администратора и выполняем вот такую команду</p>
+    <span id="example" class="code">dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</span>
+    <script>
+        const elem = document.getElementById('example')
+
+        const text = elem.textContent
+        elem.addEventListener('click', () => {
+            navigator.clipboard.writeText(elem.textContent)
+            elem.classList.add('code__active')
+
+            setTimeout(() => {
+                elem.classList.remove('code__active')
+            }, 2000)
+        })
+    </script>
+
+    <p>Далее перезагружаем комп. После скачиваем <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi" target="_blank">пакет обновления ядра linux</a> и просто устанавливаем его</p>
+    <p>После этого необходимо поставить WSL 2 версией по умолчанию, для этого запускаем PowerShell и выполняем команду</p>
+    <span id="example1" class="code">wsl --set-default-version 2</span>
+    <script>
+        const elem1 = document.getElementById('example1')
+
+        elem1.addEventListener('click', () => {
+            navigator.clipboard.writeText(elem1.textContent)
+            elem1.classList.add('code__active')
+
+            setTimeout(() => {
+                elem1.classList.remove('code__active')
+            }, 2000)
+        })
+    </script>
+    <p>Перезапускаем Docker и все работает</p>
+    <img src="./img2.jpg" alt="">
+</body>
+</html>
