@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+</head>
+<body>
+    <h1>Основные команды</h1>
+    <h2>Образы и Контейнеры</h2>
+    <p><b>Образ</b> - это некоторый шаблон, на основании которого создается контейнер (докер) image - существует только для чтения, его изменить нельзя. Образы публикуются в DockerHub. Что бы запустить приложение необходимо на основании контейнера создать докер контейнер. </p>
+    <p>Для того что бы скачать образ мы можем зайти в DockerHub, найти там необходимый образ и спулить его. Например, вот как будет выглядеть команда скачивания образа Node.js</p>
+
+    <span id="example1" class="code">docker pull node</span>
+    <script>
+        const elem1 = document.getElementById('example1')
+
+        elem1.addEventListener('click', () => {
+            navigator.clipboard.writeText(elem1.textContent)
+            elem1.classList.add('code__active')
+
+            setTimeout(() => {
+                elem1.classList.remove('code__active')
+            }, 2000)
+        })
+    </script>
+    <p>Открываем PowerShell и вводим команду.</p>
+</body>
+</html>

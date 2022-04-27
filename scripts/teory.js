@@ -911,10 +911,15 @@ const teory = {
 
 
     ],
-    Docker: [{
-        title: 'Установка',
-        path: './conspects/teory/docker/install/index.html',
-    },
+    Docker: [
+        {
+            title: 'Установка',
+            path: './conspects/teory/docker/install/index.html',
+        },
+        {
+            title: 'Основные команды',
+            path: './conspects/teory/docker/commands/index.html',
+        },
     ],
 
 
