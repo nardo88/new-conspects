@@ -920,6 +920,10 @@ const teory = {
             title: 'Основные команды',
             path: './conspects/teory/docker/commands/index.html',
         },
+        {
+            title: 'Запускаем проект',
+            path: './conspects/teory/docker/project/index.html',
+        },
     ],
 
 
