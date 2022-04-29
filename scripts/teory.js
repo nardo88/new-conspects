@@ -921,6 +921,10 @@ const teory = {
             title: 'Запускаем проект',
             path: './conspects/teory/docker/project/index.html',
         },
+        {
+            title: 'Volumes',
+            path: './conspects/teory/docker/volumes/index.html',
+        },
     ],
 
 }
