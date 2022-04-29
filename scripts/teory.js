@@ -34,7 +34,7 @@ const teory = {
         },
 
     ],
-    // ===================================================================================== CSS ================================
+
     css: [{
             title: 'Background',
             path: './conspects/teory/css/background/background.html',
@@ -72,10 +72,8 @@ const teory = {
             path: './conspects/teory/css/treugolnik/index.html',
         },
 
-
     ],
 
-    // ================================================================================ PHP =============================================
     php: [{
             title: 'Переменные и операторы',
             path: './conspects/teory/php/variables_and_operators/index.html',
@@ -143,8 +141,6 @@ const teory = {
 
     ],
 
-
-    // ================================================================================ JavaScript =============================================
     JavaScript: [{
             title: 'Типы данных',
             path: './conspects/teory/javaScript/type_data/index.html',
@@ -308,9 +304,6 @@ const teory = {
 
     ],
 
-
-
-    // ================================================================================ React =============================================
     React: [{
             title: 'Подключение React через CDN',
             path: './conspects/teory/react/add_from_cdn/index.html',
@@ -664,12 +657,14 @@ const teory = {
         },
 
     ],
+
     Vue: [{
             title: 'Инсталяция фреймворка',
             path: './conspects/teory/Vue/install/index.html',
         },
 
     ],
+
     Woocommerce: [{
             title: 'Установка Woocommerce',
             path: './conspects/teory/woocommerce/install/index.html',
@@ -697,6 +692,7 @@ const teory = {
 
 
     ],
+
     Meteor: [{
             title: 'Создание нового приложения',
             path: './conspects/teory/meteor/create_app/index.html',
@@ -755,7 +751,6 @@ const teory = {
 
 
     ],
-
 
     PostgreSQL: [{
             title: 'Установка среды',
@@ -840,6 +835,7 @@ const teory = {
             path: './conspects/teory/nextjs/image/index.html',
         },
     ],
+
     NodeJS: [{
             title: 'Модули',
             path: './conspects/teory/nodejs/modules/index.html',
@@ -911,6 +907,7 @@ const teory = {
 
 
     ],
+
     Docker: [
         {
             title: 'Установка',
@@ -925,8 +922,6 @@ const teory = {
             path: './conspects/teory/docker/project/index.html',
         },
     ],
-
-
 
 }
 
