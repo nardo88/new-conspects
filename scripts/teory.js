@@ -877,6 +877,10 @@ const teory = {
             path: './conspects/teory/nodejs/router/index.html',
         },
         {
+            title: 'Middleware в маршрутах',
+            path: './conspects/teory/nodejs/middleware/index.html',
+        },
+        {
             title: 'Controllers',
             path: './conspects/teory/nodejs/controllers/index.html',
         },

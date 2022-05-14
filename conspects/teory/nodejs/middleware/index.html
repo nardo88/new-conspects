@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/conspects.css">
+</head>
+<body>
+    <h1>Middleware в маршрутах</h1>
+    <p>Очень часто нам нужно будет в маршрутах добавлять промежуточные этапы. Один из примеров такой необходимости - это проверять авторизован ли пользователь. Т.е. перед тем как выполнить контроллер, мы должны проверить заголовок <b>Authorization</b> на наличие JWT</p>
+    <p>Вот как будет выглядить такой Middleware:</p>
+    <img src="./img1.jpg" alt="">
+    <p>Middleware принимает три аргумента: request, response и функцию Next. По факту туче - это наш контроллер, который бдет вызван при определенных условиях.</p>
+    <p>С 5 по 7 строчку мы проверяем тип метода. Дело в том, что REST API работает таким образом, что он может посылать запросы с типом OPTIONS для того что бы просто проверить доступен ли API. Поэтому в этом случае мы ничего не проверяем.</p>
+</body>
+</html>
